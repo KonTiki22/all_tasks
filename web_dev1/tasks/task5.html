@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Задание 1.5</title>
+	<link rel="stylesheet" type="text/css" href="taskstyle.css">
+</head>
+<body>
+<div id="form">
+	<h2>Делители натурального числа</h2>
+	<p>1.5. Найти все делители натурального числа N.</p>
+	<input type="number" id="num1" size="10" placeholder="число N">
+	<br>
+	<input type="button" id="btn" value="Найти">
+	<p id = "par"></p>
+</div>
+<script>
+function num()	{
+	var a, i;
+	var count = 0;
+	a = Number.parseInt(document.getElementById("num1").value);
+	if((isNaN(a)) || a%1 || a<=0) {
+		alert("Неправильный ввод, введите натуральное число (целое и больше нуля).")
+		return;
+	}
+	par = document.getElementById("par");
+	var array = [];
+	for (i = 0; i*i < a+1; i++) {
+		if(a%i == 0) {
+			array.push(i);
+			if(i != a/i) array.push(a/i);			
+		}
+	}
+	array = array.sort((a,b) => a-b);
+	par.innerHTML = `<b>Все делители числа ${a}:</b>  ${array.join(", ")}.`
+	
+}
+
+btn = document.getElementById("btn");
+btn.onclick = num;
+
+//btn.addEventListener("click", num, false);
+
+</script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Задание 1.7</title>
+	<link rel="stylesheet" type="text/css" href="taskstyle.css">
+</head>
+<body>
+<div id = "form">
+	<h2>Совершенные числа</h2>
+	<p>1.7.  Натуральное число называется совершенным, если оно равно сумме всех
+своих делителей, включая единицу. Вывести первые N (N&lt5) совершенных
+чисел на экран (Может вывести до 7 чисел, а потом js начинает округлять числа).</p>
+	<input type="number" id="num1" placeholder="число N">
+	<br>
+	<input type="button" id="btn" value="Вывести">
+	<h3 id = "hl"></h3>
+	<ol id = "list">
+</ol>
+</div>
+
+<script>
+function primeFactors()	{
+
+	form = document.getElementById("form");
+	var N = Number.parseInt(document.getElementById("num1").value);
+	if((isNaN(N)) || N%1 || N<=0) {
+		alert("Неправильный ввод, введите натуральное число (целое и больше нуля).")
+		return;
+	}
+	var hl = document.getElementById("hl");
+
+	var list = document.getElementById("list");
+	while (list.firstChild) {
+    	list.removeChild(list.firstChild);
+	}
+	var iterator = simpleNumberGen();
+	var count = 0;
+	var number, pow;
+
+	while(count<N) {
+		pow = iterator.next().value;
+		number = Math.pow(2,pow-1)*(Math.pow(2,pow) - 1)
+		if(number != 6 && number%9 != 1) continue;
+		if(!isSimple(Math.pow(2,pow) - 1)) continue;
+		var array = [];
+		var sum;
+		for (i = 0; i*i <= number; i++) {
+			if(number%i == 0) {
+				array.push(i);
+				if(i != number/i) array.push(number/i);			
+			}
+		}
+		array = array.sort((a,b) => a-b);
+		array.pop();
+		sum = array.reduce((a, b) => a + b, 0);
+		console.log(sum);
+		if(sum == number) {
+			count++;
+			var newLi = document.createElement('li');
+			newLi.innerHTML = `	&nbsp${sum} = ${array.join(" + ")}.`;
+			list.appendChild(newLi);
+		}	
+	}
+}
+
+function* simpleNumberGen() {
+	var num = 2;
+	yield num;
+	num++;
+	while(true) {
+		chk: if([1, 5].indexOf(num % 6) >= 0 || [2, 3].indexOf(num) >= 0) {
+
+			for(j = 2; j*j < num + 1; j++) {
+	            if (num % j == 0) break chk;                   
+			}
+			yield num;
+		} 
+		num += 2;
+	}
+}
+
+function isSimple(a) {
+	if(a != 1 && ([2, 3].indexOf(a) >= 0 || [1, 5].indexOf(a % 6) >= 0)) {
+		for(j = 2; j*j < a + 1; j++) {
+            if (a % j == 0) {
+            	return false;
+            }                 
+		}
+		return true;
+	} else {
+		return false;
+	}
+}
+
+btn = document.getElementById("btn");
+btn.onclick = primeFactors;
+
+</script>
+</body>
+</html>

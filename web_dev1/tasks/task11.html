@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Задание 1.11</title>
+	<link rel="stylesheet" type="text/css" href="taskstyle.css">
+</head>
+<body>
+<div id = "form">
+	<h2>Пифагоровы тройки</h2>
+	<p>1.11. Найти все различные пифагоровы тройки из интервала от N до М.</p>
+	<input type="number" id="num1" size="10" placeholder="число N">
+	<br>
+	<input type="number" id="num2" size="10" placeholder="число M">
+	<br>
+	<input type="button" id="btn" value="Check">
+	<h3 id = "hl"></h3>
+	<p id="paragraph"></p>
+	<ol id = "list">
+	</ol>
+</div>
+
+<script>
+function primeFactors()	{
+	var number, i;
+	var count = 0;
+
+	form = document.getElementById("form");
+	var N = Number.parseInt(document.getElementById("num1").value);
+	var M = Number.parseInt(document.getElementById("num2").value);
+	if((isNaN(N) || isNaN(M)) || N%1 || M%1 || N<=0 || M<=0 || M<N) {
+		alert("Неправильный ввод, введите два натуральных числа (целые и больше нуля), M >= N.")
+		return;
+	}
+
+	var hl = document.getElementById("hl");
+	hl.innerHTML = `Все пифагоровы тройки из интервала от ${N} до ${M}.`;	
+	var list = document.getElementById("list");
+	while (list.firstChild) {
+    	list.removeChild(list.firstChild);
+	}
+	var par = document.getElementById("paragraph");
+	par.innerHTML = "";
+	var rarr = [];
+out: for(N; N<=M; ++N) {
+		for(var N2=N; N2<=M; ++N2) {
+			var c = (N*N + N2*N2 )**0.5;
+			if((c-~~c)<0.00001 && c <= M) {
+				var newLi = document.createElement('li');
+				newLi.innerHTML = `	&nbsp(${[N,N2,c].join(", ")}).`;
+				list.appendChild(newLi);
+			}
+		}
+		/*var a = 3;
+		var N3 = N-3;
+		for(var b=2; b<N3; ++b) {
+			var c = N3-b;
+			if(isSimple(b) && isSimple(c)) {
+				var newLi = document.createElement('li');
+				newLi.innerHTML = `	&nbsp${N} = ${[a,b,c].join(" + ")}.`;
+				list.appendChild(newLi);
+				break;
+			}
+		}*/
+	}
+	var nback = number;
+	var hl = document.getElementById("hl");
+	var list = document.getElementById("list");
+
+
+}
+
+function* PytTriGen() {
+	var m = 1000;
+	while(true) {
+		m++;
+		var n = m%2==0? 1:2;
+		for(; n>0; n += 2) {
+			a = 2*m*n;
+			b = m*m - n*n;
+			c = m*m + n*n;
+			yield `[${m} ${n}] ${a} ${b} ${c}`;
+		}
+	}
+
+}
+
+
+btn = document.getElementById("btn");
+btn.onclick = primeFactors;
+
+</script>
+</body>
+</html>

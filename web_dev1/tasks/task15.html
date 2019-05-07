@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Задание 1.15</title>
+	<link rel="stylesheet" type="text/css" href="taskstyle.css">
+</head>
+<body>
+<div id = "form">
+	<h2>Числа, делящиеся на сумму всех своих цифр.</h2>
+	<p>1.15. Найти все целые числа из интервала от N до M, которые делятся на сумму всех своих цифр.</p>
+	<input type="number" id="num1" size="10" placeholder="число N">
+	<br>
+	<input type="number" id="num2" size="10" placeholder="число M">
+	<br>
+	<input type="button" id="btn" value="Найти">
+	<h3 id = "hl"></h3>
+	<p id="paragraph"></p>
+	<ol id = "list">
+	</ol>
+</div>
+
+<script>
+function primeFactors()	{
+	var number, i;
+	var count = 0;
+
+	form = document.getElementById("form");
+	var N = Number.parseInt(document.getElementById("num1").value);
+	var M = Number.parseInt(document.getElementById("num2").value);
+	if((isNaN(N) || isNaN(M)) || N%1 || M%1 || N<=0 || M<=0 || M<N) {
+		alert("Неправильный ввод, введите два натуральных числа (целые и больше нуля), M >= N.")
+		return;
+	}
+	
+	var hl = document.getElementById("hl");
+	hl.innerHTML = `Все целые числа из интервала от ${N} до ${M}, которые делятся на сумму всех своих цифр.`;	
+	var par = document.getElementById("paragraph");
+	par.innerHTML = "";
+	out: for(i=N;i<=M;i++) {
+		var numArr = (""+i).split("")
+		sum = 0;
+		for(f of numArr) {
+			sum += +f
+		}
+		if(i % sum != 0) {
+			continue out;
+		}
+		par.innerHTML += i + ", ";
+
+	}
+	console.log(numArr);
+	var nback = number;
+	var hl = document.getElementById("hl");
+	var list = document.getElementById("list");
+
+
+}
+
+
+btn = document.getElementById("btn");
+btn.onclick = primeFactors;
+
+</script>
+</body>
+</html>

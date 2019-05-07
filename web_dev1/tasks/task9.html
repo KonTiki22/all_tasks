@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Задание 1.2</title>
+	<link rel="stylesheet" type="text/css" href="taskstyle.css">
+</head>
+<body>
+<div id="form">
+	<h2>Числа Фибоначчи</h2>
+	<p>1.9. Проверить, будет ли данное число числом Фибоначчи.</p>
+	<input type="number" id="num1" size="10" placeholder="число">
+	<br>
+	<input type="button" id="btn" value="Проверить">
+	<p id = "par"></p>
+</div>
+
+<script>
+function num()	{
+	var num;
+	num = Number.parseInt(document.getElementById("num1").value);
+	if((isNaN(num)) || num%1 || num<=0) {
+		alert("Неправильный ввод, введите натуральное число (целое и больше нуля).")
+		return;
+	}
+
+	par = document.getElementById("par");
+	var a = b = c = 1;
+	while(b <= num) {
+		if(b == num) {
+			par.innerHTML = `Число ${num} является числом Фибоначчи.`;
+			return;
+		}
+		c = b;
+		b += a;
+		a = c;
+ 	}
+ 	par.innerHTML = `Число ${num} не является числом Фибоначчи.`;
+}
+
+btn = document.getElementById("btn");
+btn.onclick = num;
+
+//btn.addEventListener("click", num, false);
+
+</script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Задание 1.4</title>
+	<link rel="stylesheet" type="text/css" href="taskstyle.css">
+</head>
+<body>
+<div id="form">
+	<h2>Простые числа</h2>
+	<p>1.4. Написать программу, которая выводит на экран первые N простых чисел.</p>
+	<input type="number" id="num1" size="10" placeholder="число N">
+	<br>
+	<input type="button" id="btn" value="Вывести" >
+	<h3 id = "hl"></h3>
+	<p id="paragraph"></p>
+</div>
+<script>
+function sNumList()	{
+	var inpNum, i;
+	inpNum = Number.parseInt(document.getElementById("num1").value);
+	if((isNaN(inpNum)) || inpNum%1 || inpNum<=0) {
+		alert("Неправильный ввод, введите натуральное число (целое и больше нуля).")
+		return;
+	}
+	var par = document.getElementById("paragraph");
+	var iterator = simpleNumberGen();
+	var array = []
+	for(i = 0; i<inpNum; i++) {
+		array.push(iterator.next().value);
+	}
+	par.innerHTML =  `<b>Простые числа, первые ${inpNum}:</b>  ${array.join(", ")}.`;
+
+}
+
+function* simpleNumberGen() {
+	var num = 2;
+	yield num;
+	num++;
+	while(true) {
+		chk: if([1, 5].indexOf(num % 6) >= 0 || [2, 3].indexOf(num) >= 0) {
+
+			for(j = 2; j*j < num + 1; j++) {
+	            if (num % j == 0) break chk;                   
+			}
+			yield num;
+		} 
+		num += 2;
+	}
+}
+
+btn = document.getElementById("btn");
+btn.onclick = sNumList;
+
+</script>
+</body>
+</html>

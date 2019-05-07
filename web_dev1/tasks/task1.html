@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="taskstyle.css">
+</head>
+<body>
+<div id="form">
+	<h2>Взаимно простые числа</h2>
+	<p>1.1. Составить программу, проверяющую, будут ли взаимно просты два натуральных (целых) числа.</p>
+	<input type="number" id="num1" placeholder="число 1">
+	<br>
+	<input type="number" id="num2" placeholder="число 2">
+	<br>
+	<input type="button" id="btn" value="Проверить">
+	<p id = "par"></p>
+	<p id = "par2"></p>
+</div>
+
+<script>
+function num()	{
+	var a, b, i;
+	a = Number.parseInt(document.getElementById("num1").value);
+	b = Number.parseInt(document.getElementById("num2").value);
+	if((isNaN(a) || isNaN(b)) || a%1 || b%1 || a<=0 || b<=0) {
+		alert("Неправильный ввод, введите два натуральных числа (целые и больше нуля).")
+		return;
+	}
+	if (true){
+		if (a < 0 || b < 0)	{
+			+a;
+			+b
+		}	
+		par = document.getElementById("par");
+		par2 = document.getElementById("par2");
+		i = a < b ? a : b;
+		for( i;i>0; i--) {
+			if (a % i == 0 && b % i == 0 && i != 1) {
+				par.innerHTML = `Числа ${a} и ${b} не являются взаимно простыми.`;
+				par2.innerHTML = `НОД(${a}, ${b}) = ${i}`;
+				break;
+			} else if (i == 1){
+				par.innerHTML = `Числа ${a} и ${b} являются взаимно простыми.`;
+				par2.innerHTML = "";
+				break;
+			}
+		}
+	}
+}
+
+btn = document.getElementById("btn");
+btn.onclick = num;
+
+//btn.addEventListener("click", num, false);
+
+</script>
+</body>
+</html>

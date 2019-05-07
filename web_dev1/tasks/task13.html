@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Задание 1.13</title>
+	<link rel="stylesheet" type="text/css" href="taskstyle.css">
+</head>
+<body>
+<div id = "form">
+	<h2>Сложение (вычитание) двух рациональных чисел</h2>
+	<p>1.13. Написать программу сложения (вычитания) двух данных рациональных чисел. Ответ должен быть несократимой дробью.</p>
+	<h3>Введите первое число</h3>
+	<input type="number" id="num1" size="10" placeholder="числитель">
+	<br>
+	<input type="number" id="num2" size="10" placeholder="знаменатель">
+	<br>
+	<h3>Введите второе число</h3>
+	<input type="number" id="num3" size="10" placeholder="числитель">
+	<br>
+	<input type="number" id="num4" size="10" placeholder="знаменатель">
+	<br>
+	<br>
+	<input type="button" id="btn" value="Вывести результат">
+	<h3 id = "hl"></h3>
+	<p></p>
+	<p></p>
+</div>
+
+<script>
+function primeFactors()	{
+	var number, i;
+	var count = 0;
+
+	var num1 = Number.parseInt(document.getElementById("num1").value);
+	var denom1 = Number.parseInt(document.getElementById("num2").value);
+	var num2 = Number.parseInt(document.getElementById("num3").value);
+	var denom2 = Number.parseInt(document.getElementById("num4").value);
+	if(isNaN(num1) || isNaN(denom1) || num1%1 || denom1%1 || isNaN(num2) || isNaN(denom2) || num2%1 || denom2%1 || denom1 == 0 || denom2 == 0) {
+		alert("Неправильный ввод, числитель и знаменатель должны быть целыми чилами, знаменатель должен быть больше 0.")
+		return;
+	}
+	
+	var hl = document.getElementById("hl");
+	var par = document.getElementsByTagName("p");
+	par[0].innerHTML = par[1].innerHTML = "";
+
+	if(denom1 != denom2) {
+		num1 *= denom2;
+		num2 *= denom1;
+		denom1 = denom2 = denom1 * denom2;
+
+	}
+
+	hl.innerHTML = `Результат:`;
+	par[1].innerHTML = "Сложение: "+reduceFraction(num1 + num2, denom1);
+	par[2].innerHTML = "Вычитание: "+reduceFraction(num1 - num2, denom1);
+
+
+}
+
+function reduceFraction(nump, denomp) {
+	var sw = 1;
+	if(nump < 0) {
+		nump = -nump;
+		sw = 0;
+	}
+	if(nump == 0) {
+		return "0"
+	}
+	i = nump < denomp? nump:denomp;
+	out: while(true) {
+		console.log(nump)
+		for(i; i > 0; i--) {
+			if (nump % i == 0 && denomp % i == 0 && i != 1) {
+				nump = nump/i;
+				denomp = denomp/i;
+			} else if (i == 1){
+				break out;
+			}
+		}
+	}
+	return (sw? "" : "-") + nump + "/" + denomp;
+}
+
+
+btn = document.getElementById("btn");
+btn.onclick = primeFactors;
+
+</script>
+</body>
+</html>

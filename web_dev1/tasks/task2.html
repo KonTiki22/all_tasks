@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Задание 1.2</title>
+	<link rel="stylesheet" type="text/css" href="taskstyle.css">
+</head>
+<body>
+<div id="form">
+	<h2>Тест простоты</h2>
+	<p>1.2. Составить программу, проверяющую, будет ли простым данное натуральное число.</p>
+	<input type="number" id="num1" size="10" placeholder="число">
+	<br>
+	<input type="button" id="btn" value="Проверить">
+	<p id = "par"></p>
+</div>
+
+<script>
+function num()	{
+	var a, c;
+	a = Number.parseInt(document.getElementById("num1").value);
+	if((isNaN(a)) || a%1 || a<=0) {
+		alert("Неправильный ввод, введите натуральное число (целое и больше нуля).")
+		return;
+	}
+	par = document.getElementById("par");
+	lab: if([2, 3].indexOf(a) >= 0 || [1, 5].indexOf(a % 6) >= 0) {
+		for(j = 2; j*j < a + 1; j++) {
+            if (a % j == 0) {
+            	par.innerHTML = `Число ${a} не является простым.`;
+            	break lab;
+            }                 
+		}
+		par.innerHTML = `Число ${a} является простым.`;
+	} else {
+		par.innerHTML = `Число ${a} не является простым.`;
+	}
+}
+
+btn = document.getElementById("btn");
+btn.onclick = num;
+
+//btn.addEventListener("click", num, false);
+
+</script>
+</body>
+</html>

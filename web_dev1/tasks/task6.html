@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Задание 1.6</title>
+	<link rel="stylesheet" type="text/css" href="taskstyle.css">
+</head>
+<body>
+<div id = "form">
+	<h2>Факторизация</h2>
+	<p>1.6. Разложить целое число на простые множители. Вывести на экран все простые множители (в порядке возрастания) и их порядки.</p>
+	<input type="number" id="num1" size="10" placeholder="число">
+	<br>
+	<input type="button" id="btn" value="Разложить">
+	<h3 id = "hl"></h3>
+	<ol id = "list">
+</ol>
+</div>
+
+<script>
+function primeFactors()	{
+	var number, i;
+
+	form = document.getElementById("form");
+	var number = Number.parseInt(document.getElementById("num1").value);
+	if((isNaN(number)) || number%1 || number<=0) {
+		alert("Неправильный ввод, введите натуральное число (целое и больше нуля).")
+		return;
+	}
+	var nback = number;
+	var hl = document.getElementById("hl");
+
+	hl.innerHTML = ("Простые множители числа " + number + ":");
+	
+	var list = document.getElementById("list");
+	while (list.firstChild) {
+    	list.removeChild(list.firstChild);
+	}
+	var mult = 1;
+	var array = [];	
+	var i = 2;
+	if(isSimple(number)) {
+		hl.innerHTML = ("Число " + number + " - простое.");
+	} else {
+		while(i < number && i*i<=nback) {
+			if(number % i == 0) {
+				array.push(i);
+				number = number/i;
+				array.push(number);
+			} else {
+				i == 2? ++i : i+=2;
+			}
+		}
+		array = array.filter(isSimple).sort((a,b) => a-b);
+		for(elem of array) {
+			var newLi = document.createElement('li');
+			newLi.innerHTML = `	&nbsp${elem}.`;
+			list.appendChild(newLi);
+		}
+	}
+}
+
+function isSimple(a) {
+	if(a != 1 && ([2, 3].indexOf(a) >= 0 || [1, 5].indexOf(a % 6) >= 0)) {
+		for(j = 2; j*j < a + 1; j++) {
+            if (a % j == 0) {
+            	return false;
+            }                 
+		}
+		return true;
+	} else {
+		return false;
+	}
+}
+
+btn = document.getElementById("btn");
+btn.onclick = primeFactors;
+
+</script>
+</body>
+</html>

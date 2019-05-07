@@ -1,0 +1,85 @@
+body{
+	font-family: "Roboto", sans-serif, Helvetica, Arial;
+}
+
+
+#form {
+
+	margin: 15vh auto;
+	width: 70%;
+	max-width: 800px;
+	min-height: 50vh;
+	background: #fcfcfc;
+	text-align: center;
+	padding: 20px;
+	box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.5);
+}
+
+input {
+	width: 200px;
+	padding: 0px;
+   font: inherit;
+   font-size: 14px;
+}
+
+input[type="number"] {
+	width: 190px;
+	height: 25px;
+   border: 2px solid grey;
+   border-radius: 5px;
+   margin: 5px auto;
+   padding-left: 0.5em;
+}
+
+#btn {
+	cursor: pointer;
+   display: inline-block;
+   text-align: center;
+   text-decoration: none;
+   margin: 2px 0 0 -6px;
+   border: solid 2px transparent;
+   border-radius: 4px;
+   padding: 0.5em 1em;
+   color: #eee;
+   font-size: 14px;
+   background-color: rgb(4, 180, 65);
+   box-shadow: 1px 1px 4px 0px rgba(0,0,0,0.5);
+   outline: none;
+}
+
+#btn:hover {
+   color: #fff;
+   /*border-color: currentColor;*/
+   background-color: rgb(40, 120, 77);
+   box-shadow: none;
+}
+
+#btn:active {
+	background: rgb(190, 50, 0);
+	color: #fff;
+}
+
+h2 {
+	font-size: 24px;
+	color:#222;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+p {
+	margin-top: 20px;
+}
+
+ol {
+	display: inline-block;
+	/*counter-reset: myCounter;*/
+	/*list-style: none;*/
+	text-align: left;
+}
+/*
+ol > li::before {
+	display: inline-block;
+	content: counter( myCounter ) ')';
+	counter-increment: myCounter;
+}*/
+

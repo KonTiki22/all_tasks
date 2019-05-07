@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Задание 2.4</title>
+	<link rel="stylesheet" type="text/css" href="taskstyle.css">
+	<style>
+		#win{
+			width: 600px;
+			height: 300px;
+			border: solid 2px #382d28;
+			margin: auto;
+			margin-bottom: 10px;
+			background-color: #73524a;
+			font-family: Helvetica , sans-serif;
+			font-stretch: condensed;
+			font-size: 1.2em;
+			color:#efe2d4;
+		}
+		select {
+			background-color: #73524a;
+			font-family: Helvetica , sans-serif;
+			font-stretch: condensed;
+			font-size: 1em;
+			color:#efe2d4;
+			border:solid 2px;
+
+		}
+		#par {
+			text-align: left;
+			width: 600px;
+			margin: auto;
+		}
+		#hamb {
+			height: 100%;
+			width: 50%;
+			position:relative;
+			padding-bottom:200px;
+		}
+		#hamb,#filling,#spma {
+			float:left;
+			box-sizing: border-box;
+			padding-top: 15px;
+
+		}
+		#filling,#spma {
+			height: 50%;
+			width: 50%;
+			padding:5px;
+			padding-top: 15px;
+			text-align: left;
+		}
+		.fopt {
+			margin-left: 0px;
+			margin-top: 10px;	
+		}
+		#small {
+			display: none;
+		}
+		label {
+			display: block;
+		}
+		.hpic {
+			font-family: sans-serif, Helvetica, Arial;
+			line-height: 1;
+			bottom: 85px;
+			padding: 0px;
+			width: 100%;
+			position: absolute;
+			font-size: 150px;
+			text-align: center;
+		}
+		.sm {
+			font-size: 120px;
+		}
+		#hamb p {
+			position: absolute;
+			left: 50%;
+			bottom: 20px;
+			width: 200px;
+			margin-left: -100px;
+		}
+		.ra {
+			box-sizing: border-box;
+			border: solid 1px;
+			min-height: 100px;
+			padding: 10px;
+		}
+
+	</style>
+</head>
+<body>
+<div id = "form">
+	<h2>Задание 3.4</h2>
+	<p>3.4. Сеть фастфудов</p>
+	<br>
+
+	<form id="win">
+		<div id="hamb">
+			<select id="menu">
+		  		<option>Большой</option>
+		  		<option>Маленький</option>
+			</select>
+			<div id="big">
+				<div class="hpic">🍔</div>
+				<p>Большой гамбургер<br>(100 ₮, 40 ккал)</p>
+			</div>
+			<div id="small">
+				<div class="hpic sm">🍔</div>
+				<p>Маленький гамбургер <br>(50 ₮, 20 ккал)</p>
+			</div>
+		</div>
+		<div id="filling">
+			<div>Выберите начинку:</div>
+			<label><input type="radio" class="fopt" name="fill" value="cheese" checked>сыр (+ 10 ₮, + 20 ккал)</label>
+			<label><input type="radio" class="fopt" name="fill" value="salad">салат (+ 20 ₮, + 5 ккал)</label>
+			<label><input type="radio" class="fopt" name="fill" value="potato">картофель (+ 15 ₮, + 10 ккал)</label>
+		</div></p>
+		<div id="spma">
+			<div>Дополнительно:</div>
+			<label><input type="checkbox" name="sp" class="fopt" value="spice">посыпать приправой (+ 15 ₮, 0 ккал)</label>
+			<label><input type="checkbox" name="sp" class="fopt" value="mayo">полить майонезом (+ 20 ₮, + 5 ккал)</label>
+		</div>
+	</form>
+	<input type="button" id="btn" value="Рассчитать заказ">
+	<p id = "par"></p>
+</div>
+<script>
+function hambType() {
+	switch(this.value) {
+		case "Большой": {
+			big.style.display = "block";
+			small.style.display = "none";
+			ht = "big";
+			break;
+		}
+		case "Маленький": {
+			big.style.display = "none";
+			small.style.display = "block";
+			ht = "small";
+			break;
+		}
+	}
+	console.log(order);
+}
+var ht = "big";
+
+var components = {
+	big:{calories:40,price:100, toString:()=>{return "Большой гамбургер"}},
+	small:{calories:20,price:50,toString:()=>{return "Маленький гамбургер"}},
+	cheese:{calories:20,price:10, toString:()=>{return "сыром"}},
+	salad:{calories:5,price:20, toString:()=>{return "салатом"}},
+	potato:{calories:10,price:15, toString:()=>{return "картофелем"}},
+	spice:{calories:0,price:15, toString:()=>{return "специями"}},
+	mayo:{calories:5,price:20, toString:()=>{return "майонезом"}},
+}
+function makeOrder() {
+	order.hambType = components[ht];
+	order.price = order.hambType.price;
+	order.calories = order.hambType.calories;
+	message = `<b>Ваш заказ:</b><br> ${order.hambType} c `;
+	for(elem of fllist) {
+		if(elem.checked) {
+			order.filling = components[elem.value];
+			message += order.filling;
+			order.price += order.filling.price;
+			order.calories += order.filling.calories;
+		}
+	}
+	order.extra = [];
+	for(elem of cklist) {
+		if(elem.checked) {
+			order.extra.push(components[elem.value]);
+			message += `, ${components[elem.value]}`;
+			order.price += components[elem.value].price;
+			order.calories += components[elem.value].calories;
+		}
+	}
+	var rep = " и";
+	par.classList.add("ra");
+	message = message.replace(/,([^,]*)$/,rep+'$1');
+	message += `.<br>Калорийность: ${order.calories} ккал.<br>Итого к оплате: ${order.price} ₮.`
+	order.price = order.hambType.price + order.filling.price;
+	par.innerHTML = message;
+}
+
+var order = {hambType:components[ht]};
+var menu = document.getElementById("menu");
+var fllist = document.getElementsByName("fill");
+var cklist = document.getElementsByName("sp");
+
+menu.onchange = hambType;
+btn = document.getElementById("btn");
+btn.onclick = makeOrder;
+
+//btn.addEventListener("click", num, false);
+
+</script>
+</body>
+</html>

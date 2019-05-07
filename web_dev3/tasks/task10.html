@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Задание 3.10</title>
+	<link rel="stylesheet" type="text/css" href="taskstyle.css">
+	<style>
+		#inputText {
+			width: 100%;
+			height: 500px;
+			overflow: auto;
+			border: solid 1px;
+			text-align: left;
+			padding: 10px;
+			box-sizing: border-box;
+		}
+		.found {
+			background-color: yellow;
+		}
+		.arr {
+			all: unset;
+			box-sizing: border-box;
+			border: solid 1px;
+			padding: 0px;
+			height: 32px;
+			width: 32px;
+			font-weight: bold;
+			line-height: 20px;
+			margin-left: 0px;
+		}
+
+		#numb {
+			margin-left: 10px;
+		}
+		/*#next {
+			line-height: 260%;
+		}*/
+	</style>
+</head>
+<body>
+<div id = "form">
+	<h2>Задание 3.10</h2>
+	<p>3.10. Реализовать поиск в текстовой области. Внешне он выглядит как поле ввода поискового образа и кнопки, щелчок по которой запускает процедуру поиска. В простейшем варианте эта процедура прокручивает текст в окне так, чтобы найденный поисковый образ оказался видимым и выделенным. Если поиск оказался неудачным, то положение текста в окне остается неизменным и, возможно, появляется соответствующее сообщение. Указание. Для решения задачи можно воспользоваться объектом TextRange.</p>
+	<br>
+	<input type="text" id="findtext" placeholder="Введите текст">
+	<input type="button" id="next" class="arr" value="&#65088">
+	<input type="button" id="prev" class="arr" value="&#65087">
+	<span id="numb"></span>
+	<br>
+	<div id="inputText" contenteditable="true">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid praesentium quia placeat ad facere, sequi odio. Dolorum laboriosam itaque, accusamus quaerat quia adipisci quasi dicta commodi unde beatae a.</p>
+		<p>Excepturi ea soluta possimus corrupti, eius molestias consequuntur quod. Reprehenderit ad, nesciunt amet aut tempore quaerat molestias odit, eaque, nostrum magnam natus fugit sed nihil et laudantium. Impedit, qui, provident!</p>
+		<p>Obcaecati tempora maiores eos culpa libero, atque nesciunt, cum totam, ab vero fugit harum consequatur quo ullam. Voluptatem mollitia quos quisquam obcaecati ratione natus vitae aperiam! Ab placeat sapiente, nulla!</p>
+		<p>Eveniet iure perferendis ab. Sunt et, autem voluptatum culpa nam ullam tempora, vel rem quia asperiores ipsum doloribus quas possimus animi laudantium, adipisci ex! Placeat labore cupiditate officiis illo perspiciatis?</p>
+		<p>Minima, quidem, ea. Dolore voluptatum sint officiis aliquam ipsam voluptate quidem recusandae porro ex sit, officia laborum quae necessitatibus omnis iste similique ad? Dolorem, aliquid, placeat. Quae amet, nulla et.</p>
+		<p>Officiis ratione quidem quibusdam temporibus quam maiores unde facere obcaecati possimus iste optio omnis totam, harum ipsam asperiores perspiciatis eius dignissimos reiciendis voluptatibus nisi magni rem similique. Obcaecati, cum, harum.</p>
+		<p>Molestiae amet explicabo libero? Vitae error magni, adipisci ipsa quisquam velit quidem saepe culpa nulla expedita veritatis odio, itaque. Expedita, ab, laborum. Doloremque facilis dolores minima fugit temporibus, modi iusto?</p>
+		<p>Dignissimos laboriosam perspiciatis ad, sed quod temporibus nulla eum unde perferendis voluptate eaque labore at expedita esse numquam, dolore, pariatur. Quos natus labore perferendis id, quisquam rem sit molestiae possimus!</p>
+		<p>Possimus, eum, quam! Esse asperiores nam temporibus suscipit assumenda sint molestiae repellendus nemo iure, laboriosam vero, nihil maiores iste soluta ducimus tenetur quod error quo nesciunt perspiciatis commodi odio. Ab.</p>
+		<p>Numquam commodi quae, maiores iste, repudiandae autem saepe esse nesciunt recusandae suscipit itaque error dolor eligendi, ullam distinctio natus porro quibusdam. Debitis accusamus necessitatibus labore quam corrupti veritatis tempora obcaecati!</p>
+		<p>Alias vel dolorum sunt commodi architecto accusamus aperiam quibusdam veritatis quas expedita, numquam autem beatae recusandae deserunt esse, ipsa facere, tempore necessitatibus. Ducimus iste consequatur laudantium. Totam quaerat, tempore aut.</p>
+		<p>Totam odio rem sunt amet necessitatibus, atque fugit nostrum distinctio magni repudiandae! Quidem fuga odit esse laudantium, commodi vel ut incidunt quae alias saepe, omnis illum non vero maxime, quasi.</p>
+		<p>Odit veniam laborum saepe dolorem, excepturi nam aut maiores vitae maxime molestias consectetur fugiat placeat delectus temporibus, necessitatibus culpa tempora pariatur, deleniti nihil atque doloribus. Et ut natus, incidunt aliquid.</p>
+		<p>Id natus fugiat molestiae minima quasi neque delectus. Ea illum culpa deleniti consequuntur mollitia ad nesciunt voluptas delectus suscipit, est magni et veniam labore laudantium doloribus. Quisquam, dolorum! Repellat, nisi.</p>
+		<p>Voluptates ab, aspernatur numquam, ipsa ullam ex dolor corrupti commodi assumenda deserunt necessitatibus qui non. Placeat porro aliquid suscipit saepe, vero repellat quasi harum nemo maiores distinctio? Illum voluptate, ducimus?</p>
+	</div>
+<script>
+	var flist;
+	var count = -1;
+	function findMatches() {
+		count = -1;
+		var findtext = document.getElementById("findtext").value;
+		var re = new RegExp(`(${findtext})`, "gi");
+		inputText.innerHTML = (inputText.innerHTML).replace(/<span class="found".*?>(.*?)<\/span>/gi, '$1');
+		if(findtext) {
+			inputText.innerHTML = (inputText.innerHTML).replace(re, '<span class="found">$1</span>');
+		}
+		flist = document.getElementsByClassName("found");
+		numb.innerHTML = `0/${flist.length}`;
+	}
+
+	function goStep(step) {
+		flist[flist.length-1].style.backgroundColor = "yellow";
+		flist[0].style.backgroundColor = "yellow";
+		if(step>0) {
+			count<flist.length-1 ? ++count : count = 0;
+		} else {
+			count>0 ? --count : count = flist.length-1;
+		}
+		if(flist[count-step]) {
+			flist[count-step].style.backgroundColor = "yellow";
+		}
+		flist[count].style.backgroundColor = "orange";
+		flist[count].scrollIntoView();
+		if(inputText.scrollTop+inputText.offsetHeight+10<inputText.scrollHeight) {
+			inputText.scrollTop -= inputText.offsetHeight/2;
+		}
+		numb.innerHTML = `${count+1}/${flist.length}`;
+	}
+
+	
+	findtext.oninput = ()=>{findMatches();}
+
+	inputText.oninput = function(e) {
+		if(e.inputType == "insertFromPaste") {
+			inputText.innerHTML = inputText.innerHTML.replace(/<(?!\/?p(?=>|\s.*>))\/?.*?>/ig , "");
+			inputText.innerHTML = inputText.innerHTML.replace(/<p.*?>/ig , "<p>");
+			findMatches();
+		}
+	}
+
+	next.onclick = () => goStep(1);
+	prev.onclick = () => goStep(-1);
+</script>
+</body>
+</html>

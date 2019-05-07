@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Задание 3.8</title>
+	<link rel="stylesheet" type="text/css" href="taskstyle.css">
+	<style>
+		#obj {
+			width: 100px;
+			height: 100px;
+			background-color: #55f;
+			position: absolute;
+			border-radius: 50%;
+			transition: 0.1s;
+		}
+		#surf {
+			transition: 0.6s;
+			width: 100%;
+			height: 500px;
+			border: solid 20px;
+			box-sizing: border-box;
+		}
+	</style>
+</head>
+<body>
+<div id = "form">
+	<h2>Задание 3.8</h2>
+	<p>3.8. Реализовать скрипт, позволяющий перетаскивать мышью изображение. Пользователь пытается мышью перетащить изображение; затем он отпускает кнопку мыши и перемещает указатель в нужное место (при этом он может удерживать или не удерживать кнопку мыши в нажатом положении); остановившись в нужном месте, пользователь отпускает кнопку мыши или щелкает ею, чтобы прекратить перемещение изображения.</p>
+	<br>
+	<div id="surf">
+		<div id="obj"></div>
+	</div>
+	<input type="button" id="btn" value="Начать">
+	<br>
+	<input type="button" id="btn2" value="Остановить">
+<script>
+function objMove(obj,parent, x, y) {
+	var pcol = parent.style.borderColor;
+	var rect = {
+		left:parent.offsetLeft,
+		top:parent.offsetTop,
+		width:parent.offsetWidth,
+		height:parent.offsetHeight,
+		border:parent.clientLeft
+	};
+	if(rect.left+rect.border<=obj.offsetLeft && obj.offsetLeft+100<=rect.left+rect.width-rect.border) {
+		xcor += x;
+	} else if(rect.left+rect.border>obj.offsetLeft) {
+		xcor += Math.abs(x)+5;
+		xspeed = -x;
+		obj.style.backgroundColor = pcol;
+	} else if(obj.offsetLeft+100>rect.left+rect.width-rect.border) {
+		xcor -= Math.abs(x)+5;
+		xspeed = -x;
+		obj.style.backgroundColor = pcol;
+	}
+	if(rect.top+rect.border<=obj.offsetTop && obj.offsetTop+100<=rect.top+rect.height-rect.border) {
+	    ycor += y;
+	} else if(rect.top+rect.border>obj.offsetTop) {
+		ycor += Math.abs(y)+5;
+		yspeed = -y;
+		obj.style.backgroundColor = pcol;
+	} else if((obj.offsetTop+100)>rect.top+rect.height-rect.border) {
+		ycor -= Math.abs(y)+5;
+		yspeed = -y;
+		obj.style.backgroundColor = pcol;
+	}
+	obj.style.left = `${xcor}px`;
+	obj.style.top = `${ycor}px`;
+}
+function start(elem) {
+	a = `rgb(${Math.ceil(Math.random()*255)},${Math.ceil(Math.random()*255)},${Math.ceil(Math.random()*255)})`;
+	elem.style.borderColor = a;
+}
+
+var timer, timer2, a;
+var xspeed = Math.ceil(Math.random()*5);
+var yspeed = Math.ceil(Math.random()*5);
+var obj = document.getElementById("obj");
+var surf = document.getElementById("surf");
+var xcor = obj.offsetLeft;
+var ycor = obj.offsetTop;
+btn.onclick = ()=>{
+	clearInterval(timer);
+	clearInterval(timer2);
+	timer = setInterval("objMove(obj,surf, xspeed, yspeed)",50); 
+	timer2 = setInterval("start(surf)",500); 
+
+}
+btn2.onclick = ()=>{clearInterval(timer)};
+</script>
+</body>
+</html>
