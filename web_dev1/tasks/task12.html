@@ -36,7 +36,7 @@ function primeFactors()	{
 	var num2 = Number.parseInt(document.getElementById("num3").value);
 	var denom2 = Number.parseInt(document.getElementById("num4").value);
 	if(isNaN(num1) || isNaN(denom1) || num1%1 || denom1%1 || isNaN(num2) || isNaN(denom2) || num2%1 || denom2%1 || denom1 <= 0 || denom2 <= 0) {
-		alert("Неправильный ввод, числитель и знаменатель должны быть целыми чилами, знаменатель должен быть больше 0.")
+		alert("Неправильный ввод, числитель и знаменатель должны быть целыми чиламичилами, знаменатель не должен быть равен 0.");
 		return;
 	}
 
@@ -54,12 +54,21 @@ function primeFactors()	{
 
 function reduceFraction(nump, denomp) {
 	var sw = 1;
+	var sw2 = 1;
 	if(nump < 0) {
 		nump = -nump;
 		sw = 0;
 	}
+	if(denomp < 0) {
+		denomp = -denomp;
+		sw2 = 0;
+	}
 	if(nump == 0) {
 		return "0"
+	}
+	if(denomp == 0) {
+		alert("Деление на ноль");
+		return;
 	}
 
 	i = nump < denomp? nump:denomp;
@@ -73,7 +82,7 @@ function reduceFraction(nump, denomp) {
 			}
 		}
 	}
-	return (sw? "" : "-") + nump + "/" + denomp;
+	return (((sw && sw2)||(!sw && !sw2))? "" : "-") + nump + "/" + denomp;
 }
 
 
