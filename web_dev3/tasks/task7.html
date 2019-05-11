@@ -46,22 +46,22 @@ function objMove(obj,parent, x, y) {
 	if(rect.left+rect.border<=obj.offsetLeft && obj.offsetLeft+100<=rect.left+rect.width-rect.border) {
 		xcor += x;
 	} else if(rect.left+rect.border>obj.offsetLeft) {
-		xcor += Math.abs(x)+5;
+		xcor += Math.abs(x)+7;
 		xspeed = -x;
 		obj.style.backgroundColor = pcol;
 	} else if(obj.offsetLeft+100>rect.left+rect.width-rect.border) {
-		xcor -= Math.abs(x)+5;
+		xcor -= Math.abs(x)+7;
 		xspeed = -x;
 		obj.style.backgroundColor = pcol;
 	}
 	if(rect.top+rect.border<=obj.offsetTop && obj.offsetTop+100<=rect.top+rect.height-rect.border) {
 	    ycor += y;
 	} else if(rect.top+rect.border>obj.offsetTop) {
-		ycor += Math.abs(y)+5;
+		ycor += Math.abs(y)+7;
 		yspeed = -y;
 		obj.style.backgroundColor = pcol;
 	} else if((obj.offsetTop+100)>rect.top+rect.height-rect.border) {
-		ycor -= Math.abs(y)+5;
+		ycor -= Math.abs(y)+7;
 		yspeed = -y;
 		obj.style.backgroundColor = pcol;
 	}
