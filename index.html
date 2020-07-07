@@ -1,21 +1,176 @@
-<!DOCTYPE html>
+<html>
 <head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<style>
+    <title>threejs - models</title>
 
-	</style>
+    <style>
+    	body{
+    		margin: 0;
+    		overflow: hidden;
+    	}
+    </style>
 </head>
 <body>
-		<nav id="menuVertical">
-		<ul>
-			<li><h2>Web-программирование на стороне клиента </h2></li>
-			<li><a href="web_dev1/menu.html">Задание 1. Задачи на работу с числами</a></li>
-			<li><a href="web_dev2/menu.html">Задание 2. Работа с структурами данных</a></li>
-			<li><a href="web_dev3/menu.html">Задание 3. Задания на работу с DOM</a></li>
-		</ul>
-	</nav>
-	
+
+    <canvas id="myCanvas"></canvas>
+    <script src="dat.gui.js"></script>
+    <script src="three.js"></script>
+    <script src="GLTFLoader.js"></script>
+
+    <script>
+window.onload = function() {
+    var renderer,
+    	scene,
+    	camera,
+    	myCanvas = document.getElementById('myCanvas');
+
+    //RENDERER
+    renderer = new THREE.WebGLRenderer({
+      canvas: myCanvas, 
+      antialias: true
+    });
+    renderer.setClearColor(0x000000);
+    renderer.setPixelRatio(window.devicePixelRatio);
+    renderer.setSize(window.innerWidth, window.innerHeight);
+
+    //CAMERA
+    camera = new THREE.PerspectiveCamera(35, window.innerWidth / window.innerHeight, 0.1, 100000 );
+
+    //SCENE
+    scene = new THREE.Scene();
+
+    //LIGHTS
+    var light = new THREE.AmbientLight(0xffffff, 0.5);
+    scene.add(light);
+
+    var light2 = new THREE.PointLight(0xffffff, 0.5);
+    scene.add(light2);
+  
+    var loader = new THREE.GLTFLoader();
+
+    loader.load('chair_table.glb', handle_load);
+
+    var mesh;
+
+    function handle_load(gltf) {
+
+        //console.log(gltf);
+        mesh = gltf.scene;
+        //console.log(mesh.children[0]);
+        mesh.children[0].material = new THREE.MeshLambertMaterial();
+        //mesh.scale(0.5,0.5,0.5);
+		scene.add( mesh );
+        mesh.position.z = -20;
+        mesh.position.y = -4;
+        //console.log(scene.children[2]['children'])
+    }
+
+
+    var obj = {
+        rotateY: 0,
+    };
+
+    var gui = new dat.GUI();
+    gui.add(obj, 'rotateY').min(0).max(6.28).step(0.1);
+
+
+
+    //RENDER LOOP
+    //render();
+
+    var delta = 0;
+    var prevTime = Date.now();
+
+var mouse = new THREE.Vector2();    
+
+function onMouseMove( event ) {
+
+    // calculate mouse position in normalized device coordinates
+    // (-1 to +1) for both components
+
+    mouse.x = ( event.clientX / window.innerWidth ) * 2 - 1;
+    mouse.y = - ( event.clientY / window.innerHeight ) * 2 + 1;
+    //console.log(mouse.x);
+
+}
+var raycaster = new THREE.Raycaster();
+
+function render() {
+
+
+    // update the picking ray with the camera and mouse position
+    raycaster.setFromCamera( mouse, camera );
+    //console.log(raycaster);
+
+    // calculate objects intersecting the picking ray
+    //console.log(scene.children[2]['children']);
+    //var a = scene.children[2]['children'];
+    var intersects = raycaster.intersectObjects(scene.children);
+    //console.log(intersects);
+    console.log(intersects.length);
+    for ( var i = 0; i < intersects.length; i++ ) {
+        intersects[ i ].object.material.color.set( 0xff0000 );
+
+    }
+
+
+    delta += 0.1;
+
+    if (mesh) {
+    
+        mesh.rotation.y = obj.rotateY;
+
+        //animation mesh
+        // mesh.morphTargetInfluences[ 0 ] = Math.sin(delta) * 20.0;
+    }
+
+	renderer.render(scene, camera);
+    requestAnimationFrame(render);
+
+
+}
+window.addEventListener( 'mousemove', onMouseMove, false );
+
+render();
+}
+
+/*
+//var raycaster = new THREE.Raycaster();
+//console.log(raycaster);
+var mouse = new THREE.Vector2();
+
+function onMouseMove( event ) {
+
+    // calculate mouse position in normalized device coordinates
+    // (-1 to +1) for both components
+
+    mouse.x = ( event.clientX / window.innerWidth ) * 2 - 1;
+    mouse.y = - ( event.clientY / window.innerHeight ) * 2 + 1;
+
+}
+
+function render() {
+    var raycaster = new THREE.Raycaster();
+
+    // update the picking ray with the camera and mouse position
+    raycaster.setFromCamera( mouse, camera );
+
+    // calculate objects intersecting the picking ray
+    var intersects = raycaster.intersectObjects( scene.children );
+
+    for ( var i = 0; i < intersects.length; i++ ) {
+
+        intersects[ i ].object.material.color.set( 0xff0000 );
+
+    }
+
+    renderer.render( scene, camera );
+
+}
+
+window.addEventListener( 'mousemove', onMouseMove, false );
+
+window.requestAnimationFrame(render);*/
+
+    </script>
 </body>
 </html>
