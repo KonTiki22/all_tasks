@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>360 View</title>
+	<link rel="stylesheet" type="text/css" href="taskstyle.css">
+	<style>	
+		#t {
+			box-shadow: 1px 1px 4px 0px rgba(0,0,0,0.5);
+		}
+		#threesixty {
+			margin: auto;
+		}
+	</style>
+</head>
+<body>	
+<div id = 'form'>
+	<h2>360 View</h2>
+	<div id = 'threesixty'>
+	</div>
+</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/@mladenilic/threesixty.js/dist/threesixty.js">
+	</script>
+	<script>
+		
+		const threesixty = new ThreeSixty(document.getElementById('threesixty'), {
+		  image: [
+			'img/image01.jpg',
+			'img/image02.jpg',
+			'img/image03.jpg',
+			'img/image04.jpg',
+			'img/image05.jpg',
+			'img/image06.jpg',
+			'img/image07.jpg',
+			'img/image08.jpg',
+			'img/image09.jpg',
+			'img/image10.jpg',
+			'img/image11.jpg',
+			'img/image12.jpg',
+			'img/image13.jpg',
+			'img/image14.jpg',
+			'img/image15.jpg',
+			'img/image16.jpg',
+			'img/image17.jpg',
+			'img/image18.jpg',
+			'img/image19.jpg',
+			'img/image20.jpg',
+			'img/image21.jpg',
+			'img/image22.jpg',
+			'img/image23.jpg',
+			'img/image24.jpg',
+			'img/image25.jpg',
+			'img/image26.jpg',
+			'img/image27.jpg',
+			'img/image28.jpg',
+			'img/image29.jpg',
+			'img/image30.jpg',
+			'img/image31.jpg',
+			'img/image32.jpg',
+			'img/image33.jpg',
+			'img/image34.jpg',
+			'img/image35.jpg'
+		  ],
+		  width: 400,
+		  height: 243,
+		  inverted: true,
+		  prev: document.getElementById('prev'),
+		  next: document.getElementById('next')
+		});
+
+		threesixty.play();
+	</script>
+
+</body>
+</html>
+
