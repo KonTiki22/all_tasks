@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>360 View</title>
+	<link rel="stylesheet" type="text/css" href="taskstyle.css">
+	<style>	
+		#t {
+			box-shadow: 1px 1px 4px 0px rgba(0,0,0,0.5);
+		}
+		#threesixty {
+			margin: auto;
+		}
+	</style>
+</head>
+<body>	
+<div id = 'form'>
+	<h2>360 View</h2>
+	<div id = 'threesixty'>
+	</div>
+</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/@mladenilic/threesixty.js/dist/threesixty.js">
+	</script>
+	<script>
+		
+		const threesixty = new ThreeSixty(document.getElementById('threesixty'), {
+		  image: [
+		  'img/IMG_7410.png',
+			'img/IMG_7411.png',
+			'img/IMG_7412.png',
+			'img/IMG_7413.png',
+			'img/IMG_7414.png',
+			'img/IMG_7415.png',
+			'img/IMG_7416.png',
+			'img/IMG_7417.png',
+			'img/IMG_7418.png',
+			'img/IMG_7419.png',
+			'img/IMG_7420.png',
+			'img/IMG_7421.png',
+			'img/IMG_7422.png',
+			'img/IMG_7423.png',
+			'img/IMG_7424.png',
+			'img/IMG_7425.png',
+			'img/IMG_7426.png',
+			'img/IMG_7427.png',
+			'img/IMG_7428.png',
+			'img/IMG_7429.png',
+			'img/IMG_7430.png',
+			'img/IMG_7431.png',
+			'img/IMG_7432.png',
+			'img/IMG_7433.png',
+			'img/IMG_7434.png',
+			'img/IMG_7435.png',
+			'img/IMG_7436.png',
+			'img/IMG_7437.png',
+			'img/IMG_7438.png',
+			'img/IMG_7439.png',
+			'img/IMG_7440.png',
+			'img/IMG_7441.png',
+			'img/IMG_7442.png',
+			'img/IMG_7443.png',
+			'img/IMG_7444.png'
+		  ],
+		  width: 300,
+		  height: 300,
+		  inverted: true,
+		  prev: document.getElementById('prev'),
+		  next: document.getElementById('next')
+		});
+
+		threesixty.play();
+	</script>
+
+</body>
+</html>
+
