@@ -8,7 +8,7 @@
 		#t {
 			box-shadow: 1px 1px 4px 0px rgba(0,0,0,0.5);
 		}
-		#threesixty {
+		#threesixty, #threesixty2 {
 			margin: auto;
 		}
 	</style>
@@ -17,6 +17,8 @@
 <div id = 'form'>
 	<h2>360 View</h2>
 	<div id = 'threesixty'>
+	</div>
+	<div id = 'threesixty2'>
 	</div>
 </div>
 
@@ -70,8 +72,54 @@
 		});
 
 		threesixty.play();
+
+		const threesixty2 = new ThreeSixty(document.getElementById('threesixty2'), {
+		  image: [
+			'img2/image01.jpg',
+			'img2/image02.jpg',
+			'img2/image03.jpg',
+			'img2/image04.jpg',
+			'img2/image05.jpg',
+			'img2/image06.jpg',
+			'img2/image07.jpg',
+			'img2/image08.jpg',
+			'img2/image09.jpg',
+			'img2/image10.jpg',
+			'img2/image11.jpg',
+			'img2/image12.jpg',
+			'img2/image13.jpg',
+			'img2/image14.jpg',
+			'img2/image15.jpg',
+			'img2/image16.jpg',
+			'img2/image17.jpg',
+			'img2/image18.jpg',
+			'img2/image19.jpg',
+			'img2/image20.jpg',
+			'img2/image21.jpg',
+			'img2/image22.jpg',
+			'img2/image23.jpg',
+			'img2/image24.jpg',
+			'img2/image25.jpg',
+			'img2/image26.jpg',
+			'img2/image27.jpg',
+			'img2/image28.jpg',
+			'img2/image29.jpg',
+			'img2/image30.jpg',
+			'img2/image31.jpg',
+			'img2/image32.jpg',
+			'img2/image33.jpg',
+			'img2/image34.jpg',
+			'img2/image35.jpg'
+		  ],
+		  width: 300,
+		  height: 300,
+		  inverted: true,
+		  prev: document.getElementById('prev'),
+		  next: document.getElementById('next')
+		});
+
+		threesixty2.play();
 	</script>
 
 </body>
 </html>
-
