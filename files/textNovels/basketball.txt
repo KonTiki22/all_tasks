@@ -67,3 +67,8 @@
 После долгого дриблинга, я наконец-то прошел к кольцу и забил мяч.
 Игра длилась ещё минут 15, счёт был равным.
 Все уже сильно подустали и мы решили уйти на таймаут.
+3**
+Lorem ipsum dolor sit amet, 
+consectetur adipiscing elit, 
+sed do eiusmod tempor incididunt 
+ut labore et dolore magna aliqua.
