@@ -72,3 +72,9 @@ Lorem ipsum dolor sit amet,
 consectetur adipiscing elit, 
 sed do eiusmod tempor incididunt 
 ut labore et dolore magna aliqua.
+4**
+Есть много вариантов Lorem Ipsum, 
+но большинство из них имеет 
+не всегда приемлемые модификации, 
+например, юмористические вставки или слова, 
+которые даже отдалённо не напоминают латынь.
