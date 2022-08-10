@@ -1,0 +1,1054 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v3.2.40",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "extras" : {
+                "gscatter" : {
+                    "scatter_surface" : {}
+                },
+                "s_output" : "exporting...",
+                "b_settings" : 1,
+                "b_renderer" : 1,
+                "b_player" : 1,
+                "snow" : {},
+                "b_export" : 1,
+                "export_path" : "D:\\Blender\\Aframe\\",
+                "assets used" : {
+                    "67946cb4-e9eb-4da8-84bc-f0524c2a98b8" : {
+                        "thumbnail" : "thumbnail_9ee80c95-1309-48a5-9a6c-39a668a52570_f5vKfPu.jpg.1024x1024_q85.jpg",
+                        "thumbnail_small" : "thumbnail_9ee80c95-1309-48a5-9a6c-39a668a52570_f5vKfPu.jpg.256x256_q85_crop-%2C.jpg",
+                        "downloaded" : 0,
+                        "url" : "https://www.blenderkit.com/api/v1/assets/e0f5bdcf-37d7-4c5d-9760-b538d86ea816/",
+                        "id" : "e0f5bdcf-37d7-4c5d-9760-b538d86ea816",
+                        "assetBaseId" : "67946cb4-e9eb-4da8-84bc-f0524c2a98b8",
+                        "versionNumber" : 1,
+                        "author" : {
+                            "id" : "83016",
+                            "firstName" : "Pawe\u0142",
+                            "lastName" : "Wa\u0142asiewicz",
+                            "gravatarHash" : "bcf5040f25a60faabf113e84cff5924e",
+                            "avatar128" : "/avatar-redirect/666df5f1-1eed-43d5-ba7b-a8fde4aaf7b2/128/",
+                            "aboutMe" : "Just a Digital Marketing Specialist using 3d modeling hobby to keep creative juices pumping.",
+                            "aboutMeUrl" : "https://www.wytwornia-kontentu.pl/wizualizacje"
+                        },
+                        "name" : "Sunny field, 17k, unclipped",
+                        "displayName" : "Sunny field, 17k, unclipped",
+                        "description" : "Field in recreational area. Fence visible in distance. July, 18:00, Poland.  \r\n\r\nCamera background photos (JPG + RAW) with lens settings:\r\nhttps://photos.app.goo.gl/9ccVTY18zZEenrNf8",
+                        "assetType" : "hdr",
+                        "category" : "hdr-nature",
+                        "adult" : 0,
+                        "isFree" : 1,
+                        "tags" : [
+                            "field",
+                            "trees",
+                            "lot",
+                            "recreation",
+                            "fence",
+                            "summer",
+                            "sky",
+                            "sun",
+                            "evening",
+                            "grass",
+                            "house"
+                        ],
+                        "license" : "royalty_free",
+                        "sourceAppName" : "blender",
+                        "sourceAppVersion" : "3.2.0",
+                        "addonVersion" : "3.1.5",
+                        "created" : "2022-06-23T19:24:08.875688+02:00",
+                        "verificationStatus" : "validated",
+                        "isPrivate" : 0,
+                        "files" : [
+                            {
+                                "fileType" : "blend",
+                                "downloadUrl" : "https://www.blenderkit.com/api/v1/downloads/119441/",
+                                "fileThumbnail" : null,
+                                "fileThumbnailLarge" : null
+                            },
+                            {
+                                "fileType" : "resolution_0_5K",
+                                "downloadUrl" : "https://www.blenderkit.com/api/v1/downloads/123180/",
+                                "fileThumbnail" : null,
+                                "fileThumbnailLarge" : null
+                            },
+                            {
+                                "fileType" : "resolution_1K",
+                                "downloadUrl" : "https://www.blenderkit.com/api/v1/downloads/123179/",
+                                "fileThumbnail" : null,
+                                "fileThumbnailLarge" : null
+                            },
+                            {
+                                "fileType" : "resolution_2K",
+                                "downloadUrl" : "https://www.blenderkit.com/api/v1/downloads/123178/",
+                                "fileThumbnail" : null,
+                                "fileThumbnailLarge" : null
+                            },
+                            {
+                                "fileType" : "resolution_4K",
+                                "downloadUrl" : "https://www.blenderkit.com/api/v1/downloads/123177/",
+                                "fileThumbnail" : null,
+                                "fileThumbnailLarge" : null,
+                                "url" : "https://public.blenderkit.com/public-assets/assets/e0f5bdcf37d74c5d9760b538d86ea816/files/resolution_4K_f80d8744-a4fb-47d3-9a9c-fefc1380ecd0.exr",
+                                "file_name" : "resolution_4K_f80d8744-a4fb-47d3-9a9c-fefc1380ecd0.exr"
+                            },
+                            {
+                                "fileType" : "resolution_8K",
+                                "downloadUrl" : "https://www.blenderkit.com/api/v1/downloads/123176/",
+                                "fileThumbnail" : null,
+                                "fileThumbnailLarge" : null
+                            },
+                            {
+                                "fileType" : "thumbnail",
+                                "downloadUrl" : "https://www.blenderkit.com/api/v1/downloads/119440/",
+                                "fileThumbnail" : "https://public.blenderkit.com/thumbnails/assets/e0f5bdcf37d74c5d9760b538d86ea816/files/thumbnail_9ee80c95-1309-48a5-9a6c-39a668a52570_f5vKfPu.jpg.96x96_q85_crop-%2C.jpg",
+                                "fileThumbnailLarge" : "https://public.blenderkit.com/thumbnails/assets/e0f5bdcf37d74c5d9760b538d86ea816/files/thumbnail_9ee80c95-1309-48a5-9a6c-39a668a52570_f5vKfPu.jpg.1024x1024_q85_crop-%2C.jpg"
+                            }
+                        ],
+                        "filesSize" : 405689143,
+                        "thumbnailSmallUrl" : "https://public.blenderkit.com/thumbnails/assets/e0f5bdcf37d74c5d9760b538d86ea816/files/thumbnail_9ee80c95-1309-48a5-9a6c-39a668a52570_f5vKfPu.jpg.256x256_q85_crop-%2C.jpg",
+                        "thumbnailMiddleUrl" : "https://public.blenderkit.com/thumbnails/assets/e0f5bdcf37d74c5d9760b538d86ea816/files/thumbnail_9ee80c95-1309-48a5-9a6c-39a668a52570_f5vKfPu.jpg.512x512_q85_crop-%2C.jpg",
+                        "thumbnailLargeUrl" : "https://public.blenderkit.com/thumbnails/assets/e0f5bdcf37d74c5d9760b538d86ea816/files/thumbnail_9ee80c95-1309-48a5-9a6c-39a668a52570_f5vKfPu.jpg.1024x1024_q85_crop-%2C.jpg",
+                        "thumbnailXlargeUrl" : "https://public.blenderkit.com/thumbnails/assets/e0f5bdcf37d74c5d9760b538d86ea816/files/thumbnail_9ee80c95-1309-48a5-9a6c-39a668a52570_f5vKfPu.jpg.1024x1024_q85_crop-%2C.jpg",
+                        "thumbnailSmallUrlNonsquared" : "https://public.blenderkit.com/thumbnails/assets/e0f5bdcf37d74c5d9760b538d86ea816/files/thumbnail_9ee80c95-1309-48a5-9a6c-39a668a52570_f5vKfPu.jpg.256x256_q85.jpg",
+                        "thumbnailMiddleUrlNonsquared" : "https://public.blenderkit.com/thumbnails/assets/e0f5bdcf37d74c5d9760b538d86ea816/files/thumbnail_9ee80c95-1309-48a5-9a6c-39a668a52570_f5vKfPu.jpg.512x512_q85.jpg",
+                        "thumbnailLargeUrlNonsquared" : "https://public.blenderkit.com/thumbnails/assets/e0f5bdcf37d74c5d9760b538d86ea816/files/thumbnail_9ee80c95-1309-48a5-9a6c-39a668a52570_f5vKfPu.jpg.1024x1024_q85.jpg",
+                        "thumbnailXlargeUrlNonsquared" : "https://public.blenderkit.com/thumbnails/assets/e0f5bdcf37d74c5d9760b538d86ea816/files/thumbnail_9ee80c95-1309-48a5-9a6c-39a668a52570_f5vKfPu.jpg.2048x2048_q85.jpg",
+                        "showMarketingLabels" : 1,
+                        "score" : 600.0,
+                        "ratingsMedian" : {
+                            "competition-2022-votes" : null,
+                            "complexity" : null,
+                            "virtualPriceAdmin" : null,
+                            "virtualPrice" : null,
+                            "quality" : 8.0,
+                            "workingHours" : 7.5,
+                            "complexityAdmin" : null
+                        },
+                        "ratingsAverage" : {
+                            "competition-2022-votes" : null,
+                            "complexity" : null,
+                            "virtualPriceAdmin" : null,
+                            "virtualPrice" : null,
+                            "quality" : 8.0,
+                            "workingHours" : 7.5,
+                            "complexityAdmin" : null
+                        },
+                        "ratingsCount" : {
+                            "competition-2022-votes" : 0,
+                            "complexity" : 0,
+                            "virtualPriceAdmin" : 0,
+                            "virtualPrice" : 0,
+                            "quality" : 1,
+                            "workingHours" : 2,
+                            "complexityAdmin" : 0
+                        },
+                        "ratingsSum" : {
+                            "competition-2022-votes" : null,
+                            "complexity" : null,
+                            "virtualPriceAdmin" : null,
+                            "virtualPrice" : null,
+                            "quality" : 8.0,
+                            "workingHours" : 15.0,
+                            "complexityAdmin" : null
+                        },
+                        "dictParameters" : {
+                            "textureResolutionMax" : 17000,
+                            "trueHDR" : 1
+                        },
+                        "canDownload" : 1,
+                        "canDownloadError" : 1,
+                        "available_resolutions" : [
+                            512,
+                            1024,
+                            2048,
+                            4096,
+                            8192
+                        ],
+                        "max_resolution" : 8192,
+                        "tooltip_data" : {
+                            "aname" : "Sunny field, 17k, unclipped",
+                            "author_text" : "by Pawe\u0142 Wa\u0142asiewicz",
+                            "quality" : "8"
+                        },
+                        "resolution" : "resolution_4K"
+                    },
+                    "3aab8896-3f13-43e8-bc4e-50b39c5b9263" : {
+                        "thumbnail" : "thumbnail_671a269a-ea6a-4401-92ce-3f70bb93521c.jpg.512x512_q85_crop-%2C.jpg",
+                        "thumbnail_small" : "thumbnail_671a269a-ea6a-4401-92ce-3f70bb93521c.jpg.256x256_q85_crop-%2C.jpg",
+                        "downloaded" : 0,
+                        "bbox_min" : [
+                            -0.4377,
+                            -0.9747,
+                            0.0
+                        ],
+                        "bbox_max" : [
+                            0.4377,
+                            1.0217,
+                            0.9932
+                        ],
+                        "url" : "https://www.blenderkit.com/api/v1/assets/7e7bfa99-c6bf-4408-9406-6f08714de516/",
+                        "id" : "7e7bfa99-c6bf-4408-9406-6f08714de516",
+                        "assetBaseId" : "3aab8896-3f13-43e8-bc4e-50b39c5b9263",
+                        "versionNumber" : 1,
+                        "author" : {
+                            "id" : "280678",
+                            "firstName" : "Mesk911",
+                            "lastName" : "",
+                            "gravatarHash" : "7677940748604a9594ee789054d417b4",
+                            "avatar128" : "/avatar-redirect/fa082f64-7c44-436f-a691-3edf104434b1/128/",
+                            "aboutMe" : "\u0669(\u2299\u203f\u2299)\u06f6",
+                            "aboutMeUrl" : "https://www.behance.net/Mesk911",
+                            "tooltip" : "Mesk911 \n\n\u0669(\u2299\u203f\u2299)\u06f6\n",
+                            "gravatarImg" : "C:\\Users\\admin\\AppData\\Local\\Temp\\bkit_temp\\bkit_g/280678.jpg"
+                        },
+                        "name" : "Pool chair \"TOKYO CHAISE LONGUE\"",
+                        "displayName" : "Pool chair \"TOKYO CHAISE LONGUE\"",
+                        "description" : "Luxery wooden Pool chair \"TOKYO CHAISE LONGUE\"",
+                        "assetType" : "model",
+                        "category" : "outdoor-furniture",
+                        "adult" : 0,
+                        "isFree" : 1,
+                        "tags" : [
+                            "sun",
+                            "lounger",
+                            "sun lounger",
+                            "garden",
+                            "garden lounger",
+                            "pool",
+                            "chair",
+                            "pool chair",
+                            "wood",
+                            "seat"
+                        ],
+                        "license" : "royalty_free",
+                        "sourceAppName" : "blender",
+                        "sourceAppVersion" : "3.1.2",
+                        "addonVersion" : "3.1.3",
+                        "created" : "2022-05-12T17:46:18.276987+02:00",
+                        "verificationStatus" : "validated",
+                        "isPrivate" : 0,
+                        "files" : [
+                            {
+                                "fileType" : "blend",
+                                "downloadUrl" : "https://www.blenderkit.com/api/v1/downloads/115099/",
+                                "fileThumbnail" : null,
+                                "fileThumbnailLarge" : null
+                            },
+                            {
+                                "fileType" : "resolution_0_5K",
+                                "downloadUrl" : "https://www.blenderkit.com/api/v1/downloads/123377/",
+                                "fileThumbnail" : null,
+                                "fileThumbnailLarge" : null
+                            },
+                            {
+                                "fileType" : "resolution_1K",
+                                "downloadUrl" : "https://www.blenderkit.com/api/v1/downloads/123376/",
+                                "fileThumbnail" : null,
+                                "fileThumbnailLarge" : null
+                            },
+                            {
+                                "fileType" : "resolution_2K",
+                                "downloadUrl" : "https://www.blenderkit.com/api/v1/downloads/123375/",
+                                "fileThumbnail" : null,
+                                "fileThumbnailLarge" : null,
+                                "url" : "https://public.blenderkit.com/public-assets/assets/7e7bfa99c6bf440894066f08714de516/files/resolution_2K_be98a548-50e5-4768-bcd2-7cc12e1b7fed.blend",
+                                "file_name" : "resolution_2K_be98a548-50e5-4768-bcd2-7cc12e1b7fed.blend"
+                            },
+                            {
+                                "fileType" : "resolution_4K",
+                                "downloadUrl" : "https://www.blenderkit.com/api/v1/downloads/123374/",
+                                "fileThumbnail" : null,
+                                "fileThumbnailLarge" : null
+                            },
+                            {
+                                "fileType" : "thumbnail",
+                                "downloadUrl" : "https://www.blenderkit.com/api/v1/downloads/115098/",
+                                "fileThumbnail" : "https://public.blenderkit.com/thumbnails/assets/7e7bfa99c6bf440894066f08714de516/files/thumbnail_671a269a-ea6a-4401-92ce-3f70bb93521c.jpg.96x96_q85_crop-%2C.jpg",
+                                "fileThumbnailLarge" : "https://public.blenderkit.com/thumbnails/assets/7e7bfa99c6bf440894066f08714de516/files/thumbnail_671a269a-ea6a-4401-92ce-3f70bb93521c.jpg.1024x1024_q85_crop-%2C.jpg"
+                            }
+                        ],
+                        "filesSize" : 8876502,
+                        "thumbnailSmallUrl" : "https://public.blenderkit.com/thumbnails/assets/7e7bfa99c6bf440894066f08714de516/files/thumbnail_671a269a-ea6a-4401-92ce-3f70bb93521c.jpg.256x256_q85_crop-%2C.jpg",
+                        "thumbnailMiddleUrl" : "https://public.blenderkit.com/thumbnails/assets/7e7bfa99c6bf440894066f08714de516/files/thumbnail_671a269a-ea6a-4401-92ce-3f70bb93521c.jpg.512x512_q85_crop-%2C.jpg",
+                        "thumbnailLargeUrl" : "https://public.blenderkit.com/thumbnails/assets/7e7bfa99c6bf440894066f08714de516/files/thumbnail_671a269a-ea6a-4401-92ce-3f70bb93521c.jpg.1024x1024_q85_crop-%2C.jpg",
+                        "thumbnailXlargeUrl" : "https://public.blenderkit.com/thumbnails/assets/7e7bfa99c6bf440894066f08714de516/files/thumbnail_671a269a-ea6a-4401-92ce-3f70bb93521c.jpg.1024x1024_q85_crop-%2C.jpg",
+                        "thumbnailSmallUrlNonsquared" : "https://public.blenderkit.com/thumbnails/assets/7e7bfa99c6bf440894066f08714de516/files/thumbnail_671a269a-ea6a-4401-92ce-3f70bb93521c.jpg.256x256_q85.jpg",
+                        "thumbnailMiddleUrlNonsquared" : "https://public.blenderkit.com/thumbnails/assets/7e7bfa99c6bf440894066f08714de516/files/thumbnail_671a269a-ea6a-4401-92ce-3f70bb93521c.jpg.512x512_q85.jpg",
+                        "thumbnailLargeUrlNonsquared" : "https://public.blenderkit.com/thumbnails/assets/7e7bfa99c6bf440894066f08714de516/files/thumbnail_671a269a-ea6a-4401-92ce-3f70bb93521c.jpg.1024x1024_q85.jpg",
+                        "thumbnailXlargeUrlNonsquared" : "https://public.blenderkit.com/thumbnails/assets/7e7bfa99c6bf440894066f08714de516/files/thumbnail_671a269a-ea6a-4401-92ce-3f70bb93521c.jpg.2048x2048_q85.jpg",
+                        "showMarketingLabels" : 1,
+                        "score" : 640.0,
+                        "ratingsMedian" : {
+                            "competition-2022-votes" : null,
+                            "complexity" : null,
+                            "virtualPriceAdmin" : null,
+                            "virtualPrice" : null,
+                            "quality" : 8.0,
+                            "workingHours" : 8.0,
+                            "complexityAdmin" : null
+                        },
+                        "ratingsAverage" : {
+                            "competition-2022-votes" : null,
+                            "complexity" : null,
+                            "virtualPriceAdmin" : null,
+                            "virtualPrice" : null,
+                            "quality" : 8.0,
+                            "workingHours" : 8.0,
+                            "complexityAdmin" : null
+                        },
+                        "ratingsCount" : {
+                            "competition-2022-votes" : 0,
+                            "complexity" : 0,
+                            "virtualPriceAdmin" : 0,
+                            "virtualPrice" : 0,
+                            "quality" : 2,
+                            "workingHours" : 1,
+                            "complexityAdmin" : 0
+                        },
+                        "ratingsSum" : {
+                            "competition-2022-votes" : null,
+                            "complexity" : null,
+                            "virtualPriceAdmin" : null,
+                            "virtualPrice" : null,
+                            "quality" : 16.0,
+                            "workingHours" : 8.0,
+                            "complexityAdmin" : null
+                        },
+                        "dictParameters" : {
+                            "textureResolutionMax" : 4500,
+                            "faceCount" : 26007,
+                            "productionLevel" : "finished",
+                            "procedural" : 0,
+                            "modelStyle" : "realistic",
+                            "condition" : "new",
+                            "designer" : "CHARLOTTE PERRIAND",
+                            "manufacturer" : "Cassina",
+                            "designCollection" : "TOKYO CHAISE LONGUE",
+                            "purePbr" : 1,
+                            "shaders" : [
+                                "principled"
+                            ],
+                            "animated" : 0,
+                            "pbrType" : "metallic",
+                            "uv" : 1,
+                            "textureResolutionMin" : 1485,
+                            "engines" : [
+                                "cycles"
+                            ],
+                            "modifiers" : [
+                                "mirror",
+                                "bevel"
+                            ],
+                            "materials" : [
+                                "fabric",
+                                "wood",
+                                "leather",
+                                "metal.001"
+                            ],
+                            "rig" : 0,
+                            "simulation" : 0,
+                            "dimensionX" : 0.8754,
+                            "dimensionY" : 1.9964,
+                            "dimensionZ" : 0.9932,
+                            "boundBoxMinX" : -0.4377,
+                            "boundBoxMinY" : -0.9747,
+                            "boundBoxMinZ" : 0.0,
+                            "boundBoxMaxX" : 0.4377,
+                            "boundBoxMaxY" : 1.0217,
+                            "boundBoxMaxZ" : 0.9932,
+                            "faceCountRender" : 42405,
+                            "meshPolyType" : "quad_dominant",
+                            "manifold" : 0,
+                            "objectCount" : 19,
+                            "nodeCount" : 16,
+                            "textureCount" : 5,
+                            "megapixels" : 23
+                        },
+                        "canDownload" : 1,
+                        "canDownloadError" : 1,
+                        "available_resolutions" : [
+                            512,
+                            1024,
+                            2048,
+                            4096
+                        ],
+                        "max_resolution" : 4096,
+                        "tooltip_data" : {
+                            "aname" : "Pool chair \"TOKYO CHAISE LONGUE\"",
+                            "author_text" : "by Mesk911 ",
+                            "quality" : "8"
+                        },
+                        "resolution" : "resolution_2K"
+                    },
+                    "2810ce15-1076-44e6-9b95-90487f8d5dc5" : {
+                        "thumbnail" : "thumbnail_eef0a08e-ee28-4544-be12-d6146c989853.jpg.512x512_q85_crop-%2C.jpg",
+                        "thumbnail_small" : "thumbnail_eef0a08e-ee28-4544-be12-d6146c989853.jpg.256x256_q85_crop-%2C.jpg",
+                        "downloaded" : 0,
+                        "bbox_min" : [
+                            -0.6523,
+                            -0.7144,
+                            0.0
+                        ],
+                        "bbox_max" : [
+                            0.6023,
+                            0.5467,
+                            0.7658
+                        ],
+                        "url" : "https://www.blenderkit.com/api/v1/assets/32002ed3-1b0b-40d9-835d-a36bc16d5b51/",
+                        "id" : "32002ed3-1b0b-40d9-835d-a36bc16d5b51",
+                        "assetBaseId" : "2810ce15-1076-44e6-9b95-90487f8d5dc5",
+                        "versionNumber" : 1,
+                        "author" : {
+                            "id" : "2",
+                            "firstName" : "Vil\u00e9m",
+                            "lastName" : "Duha",
+                            "gravatarHash" : "7d60f17cdce549f0f0159215cd006ae9",
+                            "avatar128" : "/avatar-redirect/95cf3d26-35ba-41b0-84f1-55ee67cbeae4/128/",
+                            "aboutMe" : "On this account we store assets created by BlenderKit team.",
+                            "aboutMeUrl" : "https://www.blenderkit.com/about"
+                        },
+                        "name" : "Shrub",
+                        "displayName" : "Shrub",
+                        "description" : "",
+                        "assetType" : "model",
+                        "category" : "nature-outdoor",
+                        "adult" : 0,
+                        "isFree" : 1,
+                        "tags" : [
+                            "bush",
+                            "shrub",
+                            "garden",
+                            "lush",
+                            "spring",
+                            "non-manifold",
+                            "uv"
+                        ],
+                        "license" : "cc_zero",
+                        "sourceAppName" : "blender",
+                        "sourceAppVersion" : "2.80.47",
+                        "addonVersion" : "1.0.22",
+                        "created" : "2019-04-09T22:40:39.486297+02:00",
+                        "verificationStatus" : "validated",
+                        "isPrivate" : 0,
+                        "files" : [
+                            {
+                                "fileType" : "blend",
+                                "downloadUrl" : "https://www.blenderkit.com/api/v1/downloads/4643/",
+                                "fileThumbnail" : null,
+                                "fileThumbnailLarge" : null
+                            },
+                            {
+                                "fileType" : "resolution_0_5K",
+                                "downloadUrl" : "https://www.blenderkit.com/api/v1/downloads/30091/",
+                                "fileThumbnail" : null,
+                                "fileThumbnailLarge" : null
+                            },
+                            {
+                                "fileType" : "resolution_1K",
+                                "downloadUrl" : "https://www.blenderkit.com/api/v1/downloads/30090/",
+                                "fileThumbnail" : null,
+                                "fileThumbnailLarge" : null,
+                                "url" : "https://public.blenderkit.com/public-assets/assets/32002ed31b0b40d9835da36bc16d5b51/files/resolution_1K_aa4ebf2c-17b0-4267-8872-2c9fd2c43061.blend",
+                                "file_name" : "resolution_1K_aa4ebf2c-17b0-4267-8872-2c9fd2c43061.blend"
+                            },
+                            {
+                                "fileType" : "thumbnail",
+                                "downloadUrl" : "https://www.blenderkit.com/api/v1/downloads/57669/",
+                                "fileThumbnail" : "https://public.blenderkit.com/thumbnails/assets/32002ed31b0b40d9835da36bc16d5b51/files/thumbnail_eef0a08e-ee28-4544-be12-d6146c989853.jpg.96x96_q85_crop-%2C.jpg",
+                                "fileThumbnailLarge" : "https://public.blenderkit.com/thumbnails/assets/32002ed31b0b40d9835da36bc16d5b51/files/thumbnail_eef0a08e-ee28-4544-be12-d6146c989853.jpg.1024x1024_q85_crop-%2C.jpg"
+                            }
+                        ],
+                        "filesSize" : 6702327,
+                        "thumbnailSmallUrl" : "https://public.blenderkit.com/thumbnails/assets/32002ed31b0b40d9835da36bc16d5b51/files/thumbnail_eef0a08e-ee28-4544-be12-d6146c989853.jpg.256x256_q85_crop-%2C.jpg",
+                        "thumbnailMiddleUrl" : "https://public.blenderkit.com/thumbnails/assets/32002ed31b0b40d9835da36bc16d5b51/files/thumbnail_eef0a08e-ee28-4544-be12-d6146c989853.jpg.512x512_q85_crop-%2C.jpg",
+                        "thumbnailLargeUrl" : "https://public.blenderkit.com/thumbnails/assets/32002ed31b0b40d9835da36bc16d5b51/files/thumbnail_eef0a08e-ee28-4544-be12-d6146c989853.jpg.1024x1024_q85_crop-%2C.jpg",
+                        "thumbnailXlargeUrl" : "https://public.blenderkit.com/thumbnails/assets/32002ed31b0b40d9835da36bc16d5b51/files/thumbnail_eef0a08e-ee28-4544-be12-d6146c989853.jpg.1024x1024_q85_crop-%2C.jpg",
+                        "thumbnailSmallUrlNonsquared" : "https://public.blenderkit.com/thumbnails/assets/32002ed31b0b40d9835da36bc16d5b51/files/thumbnail_eef0a08e-ee28-4544-be12-d6146c989853.jpg.256x256_q85.jpg",
+                        "thumbnailMiddleUrlNonsquared" : "https://public.blenderkit.com/thumbnails/assets/32002ed31b0b40d9835da36bc16d5b51/files/thumbnail_eef0a08e-ee28-4544-be12-d6146c989853.jpg.512x512_q85.jpg",
+                        "thumbnailLargeUrlNonsquared" : "https://public.blenderkit.com/thumbnails/assets/32002ed31b0b40d9835da36bc16d5b51/files/thumbnail_eef0a08e-ee28-4544-be12-d6146c989853.jpg.1024x1024_q85.jpg",
+                        "thumbnailXlargeUrlNonsquared" : "https://public.blenderkit.com/thumbnails/assets/32002ed31b0b40d9835da36bc16d5b51/files/thumbnail_eef0a08e-ee28-4544-be12-d6146c989853.jpg.2048x2048_q85.jpg",
+                        "showMarketingLabels" : 1,
+                        "score" : 336.0,
+                        "ratingsMedian" : {
+                            "competition-2022-votes" : null,
+                            "complexity" : null,
+                            "virtualPriceAdmin" : null,
+                            "virtualPrice" : null,
+                            "quality" : 10.0,
+                            "workingHours" : 3.6,
+                            "complexityAdmin" : null
+                        },
+                        "ratingsAverage" : {
+                            "competition-2022-votes" : null,
+                            "complexity" : null,
+                            "virtualPriceAdmin" : null,
+                            "virtualPrice" : null,
+                            "quality" : 9.333333333333334,
+                            "workingHours" : 3.6,
+                            "complexityAdmin" : null
+                        },
+                        "ratingsCount" : {
+                            "competition-2022-votes" : 0,
+                            "complexity" : 0,
+                            "virtualPriceAdmin" : 0,
+                            "virtualPrice" : 0,
+                            "quality" : 6,
+                            "workingHours" : 1,
+                            "complexityAdmin" : 0
+                        },
+                        "ratingsSum" : {
+                            "competition-2022-votes" : null,
+                            "complexity" : null,
+                            "virtualPriceAdmin" : null,
+                            "virtualPrice" : null,
+                            "quality" : 56.0,
+                            "workingHours" : 3.6,
+                            "complexityAdmin" : null
+                        },
+                        "dictParameters" : {
+                            "textureResolutionMax" : 2048,
+                            "faceCount" : 15980,
+                            "productionLevel" : "finished",
+                            "modelStyle" : "realistic",
+                            "purePbr" : 0,
+                            "shaders" : [
+                                "principled",
+                                "mix shader",
+                                "translucent",
+                                "transparent"
+                            ],
+                            "animated" : 0,
+                            "uv" : 1,
+                            "textureResolutionMin" : 2048,
+                            "engines" : [
+                                "cycles"
+                            ],
+                            "modifiers" : [
+                                ""
+                            ],
+                            "materials" : [
+                                "pine procedural",
+                                "Material.001"
+                            ],
+                            "rig" : 0,
+                            "simulation" : 0,
+                            "dimensionX" : 1.2546,
+                            "dimensionY" : 1.2611,
+                            "dimensionZ" : 0.7658,
+                            "boundBoxMinX" : -0.6523,
+                            "boundBoxMinY" : -0.7144,
+                            "boundBoxMinZ" : 0.0,
+                            "boundBoxMaxX" : 0.6023,
+                            "boundBoxMaxY" : 0.5467,
+                            "boundBoxMaxZ" : 0.7658,
+                            "faceCountRender" : 15980,
+                            "meshPolyType" : "quad_dominant",
+                            "manifold" : 0,
+                            "objectCount" : 1
+                        },
+                        "canDownload" : 1,
+                        "canDownloadError" : 1,
+                        "available_resolutions" : [
+                            512,
+                            1024
+                        ],
+                        "max_resolution" : 1024,
+                        "tooltip_data" : {
+                            "aname" : "Shrub",
+                            "author_text" : "by BlenderKit Community",
+                            "quality" : "9"
+                        },
+                        "resolution" : "resolution_1K"
+                    },
+                    "76fbac4b-3c69-4b92-911c-1ad5f90ab923" : {
+                        "thumbnail" : "thumbnail_37e5c95f-d29e-4f3f-884c-af91dfb0412d.jpg.512x512_q85_crop-%2C.jpg",
+                        "thumbnail_small" : "thumbnail_37e5c95f-d29e-4f3f-884c-af91dfb0412d.jpg.256x256_q85_crop-%2C.jpg",
+                        "downloaded" : 0,
+                        "bbox_min" : [
+                            -0.4286,
+                            -0.4168,
+                            -0.0119
+                        ],
+                        "bbox_max" : [
+                            0.6442,
+                            0.4241,
+                            1.5819
+                        ],
+                        "url" : "https://www.blenderkit.com/api/v1/assets/5efb13f2-47e5-4977-b721-a4c49a3f0693/",
+                        "id" : "5efb13f2-47e5-4977-b721-a4c49a3f0693",
+                        "assetBaseId" : "76fbac4b-3c69-4b92-911c-1ad5f90ab923",
+                        "versionNumber" : 1,
+                        "author" : {
+                            "id" : "170552",
+                            "firstName" : "Laura",
+                            "lastName" : "Mercadal",
+                            "gravatarHash" : "1020c3dabcb83dde37be4c1ff820cfa7",
+                            "avatar128" : "/avatar-redirect/dbb384b1-d19f-439c-805e-15f3fd9ee494/128/",
+                            "aboutMe" : "Hi I'm Laura, and I like to create things withBlender !",
+                            "aboutMeUrl" : "https://www.instagram.com/mercadal_laura/",
+                            "tooltip" : "Laura Mercadal\n\nHi I'm Laura, and I like to create things withBlender !\n",
+                            "gravatarImg" : "C:\\Users\\admin\\AppData\\Local\\Temp\\bkit_temp\\bkit_g/170552.jpg"
+                        },
+                        "name" : "Water Well",
+                        "displayName" : "Water Well",
+                        "description" : "Sheare your work with me ! And check my insta :)",
+                        "assetType" : "model",
+                        "category" : "fountain",
+                        "adult" : 0,
+                        "isFree" : 1,
+                        "tags" : [
+                            "decoration",
+                            "well",
+                            "water",
+                            "exterior",
+                            "garden",
+                            "bucket",
+                            "laura",
+                            "mercadal"
+                        ],
+                        "license" : "royalty_free",
+                        "sourceAppName" : "blender",
+                        "sourceAppVersion" : "2.93.0",
+                        "addonVersion" : "2.93.0",
+                        "created" : "2021-08-14T17:34:06.965814+02:00",
+                        "verificationStatus" : "validated",
+                        "isPrivate" : 0,
+                        "files" : [
+                            {
+                                "fileType" : "blend",
+                                "downloadUrl" : "https://www.blenderkit.com/api/v1/downloads/77465/",
+                                "fileThumbnail" : null,
+                                "fileThumbnailLarge" : null
+                            },
+                            {
+                                "fileType" : "resolution_0_5K",
+                                "downloadUrl" : "https://www.blenderkit.com/api/v1/downloads/77982/",
+                                "fileThumbnail" : null,
+                                "fileThumbnailLarge" : null
+                            },
+                            {
+                                "fileType" : "resolution_1K",
+                                "downloadUrl" : "https://www.blenderkit.com/api/v1/downloads/77981/",
+                                "fileThumbnail" : null,
+                                "fileThumbnailLarge" : null
+                            },
+                            {
+                                "fileType" : "resolution_2K",
+                                "downloadUrl" : "https://www.blenderkit.com/api/v1/downloads/77980/",
+                                "fileThumbnail" : null,
+                                "fileThumbnailLarge" : null,
+                                "url" : "https://public.blenderkit.com/public-assets/assets/5efb13f247e54977b721a4c49a3f0693/files/resolution_2K_14c8d0cb-12c9-4db9-90f1-2c44c1e2c93b.blend",
+                                "file_name" : "resolution_2K_14c8d0cb-12c9-4db9-90f1-2c44c1e2c93b.blend"
+                            },
+                            {
+                                "fileType" : "resolution_4K",
+                                "downloadUrl" : "https://www.blenderkit.com/api/v1/downloads/77979/",
+                                "fileThumbnail" : null,
+                                "fileThumbnailLarge" : null
+                            },
+                            {
+                                "fileType" : "thumbnail",
+                                "downloadUrl" : "https://www.blenderkit.com/api/v1/downloads/77885/",
+                                "fileThumbnail" : "https://public.blenderkit.com/thumbnails/assets/5efb13f247e54977b721a4c49a3f0693/files/thumbnail_37e5c95f-d29e-4f3f-884c-af91dfb0412d.jpg.96x96_q85_crop-%2C.jpg",
+                                "fileThumbnailLarge" : "https://public.blenderkit.com/thumbnails/assets/5efb13f247e54977b721a4c49a3f0693/files/thumbnail_37e5c95f-d29e-4f3f-884c-af91dfb0412d.jpg.1024x1024_q85_crop-%2C.jpg"
+                            }
+                        ],
+                        "filesSize" : 197355470,
+                        "thumbnailSmallUrl" : "https://public.blenderkit.com/thumbnails/assets/5efb13f247e54977b721a4c49a3f0693/files/thumbnail_37e5c95f-d29e-4f3f-884c-af91dfb0412d.jpg.256x256_q85_crop-%2C.jpg",
+                        "thumbnailMiddleUrl" : "https://public.blenderkit.com/thumbnails/assets/5efb13f247e54977b721a4c49a3f0693/files/thumbnail_37e5c95f-d29e-4f3f-884c-af91dfb0412d.jpg.512x512_q85_crop-%2C.jpg",
+                        "thumbnailLargeUrl" : "https://public.blenderkit.com/thumbnails/assets/5efb13f247e54977b721a4c49a3f0693/files/thumbnail_37e5c95f-d29e-4f3f-884c-af91dfb0412d.jpg.1024x1024_q85_crop-%2C.jpg",
+                        "thumbnailXlargeUrl" : "https://public.blenderkit.com/thumbnails/assets/5efb13f247e54977b721a4c49a3f0693/files/thumbnail_37e5c95f-d29e-4f3f-884c-af91dfb0412d.jpg.1024x1024_q85_crop-%2C.jpg",
+                        "thumbnailSmallUrlNonsquared" : "https://public.blenderkit.com/thumbnails/assets/5efb13f247e54977b721a4c49a3f0693/files/thumbnail_37e5c95f-d29e-4f3f-884c-af91dfb0412d.jpg.256x256_q85.jpg",
+                        "thumbnailMiddleUrlNonsquared" : "https://public.blenderkit.com/thumbnails/assets/5efb13f247e54977b721a4c49a3f0693/files/thumbnail_37e5c95f-d29e-4f3f-884c-af91dfb0412d.jpg.512x512_q85.jpg",
+                        "thumbnailLargeUrlNonsquared" : "https://public.blenderkit.com/thumbnails/assets/5efb13f247e54977b721a4c49a3f0693/files/thumbnail_37e5c95f-d29e-4f3f-884c-af91dfb0412d.jpg.1024x1024_q85.jpg",
+                        "thumbnailXlargeUrlNonsquared" : "https://public.blenderkit.com/thumbnails/assets/5efb13f247e54977b721a4c49a3f0693/files/thumbnail_37e5c95f-d29e-4f3f-884c-af91dfb0412d.jpg.2048x2048_q85.jpg",
+                        "showMarketingLabels" : 1,
+                        "score" : 966.6666666666665,
+                        "ratingsMedian" : {
+                            "competition-2022-votes" : null,
+                            "complexity" : null,
+                            "virtualPriceAdmin" : null,
+                            "virtualPrice" : null,
+                            "quality" : 10.0,
+                            "workingHours" : 10.0,
+                            "complexityAdmin" : null
+                        },
+                        "ratingsAverage" : {
+                            "competition-2022-votes" : null,
+                            "complexity" : null,
+                            "virtualPriceAdmin" : null,
+                            "virtualPrice" : null,
+                            "quality" : 9.666666666666666,
+                            "workingHours" : 10.0,
+                            "complexityAdmin" : null
+                        },
+                        "ratingsCount" : {
+                            "competition-2022-votes" : 0,
+                            "complexity" : 0,
+                            "virtualPriceAdmin" : 0,
+                            "virtualPrice" : 0,
+                            "quality" : 3,
+                            "workingHours" : 3,
+                            "complexityAdmin" : 0
+                        },
+                        "ratingsSum" : {
+                            "competition-2022-votes" : null,
+                            "complexity" : null,
+                            "virtualPriceAdmin" : null,
+                            "virtualPrice" : null,
+                            "quality" : 29.0,
+                            "workingHours" : 35.0,
+                            "complexityAdmin" : null
+                        },
+                        "dictParameters" : {
+                            "textureResolutionMax" : 4096,
+                            "faceCount" : 26744,
+                            "productionLevel" : "finished",
+                            "procedural" : 0,
+                            "modelStyle" : "realistic",
+                            "condition" : "new",
+                            "purePbr" : 1,
+                            "shaders" : [
+                                "principled"
+                            ],
+                            "animated" : 0,
+                            "pbrType" : "metallic",
+                            "uv" : 1,
+                            "textureResolutionMin" : 2048,
+                            "engines" : [
+                                "cycles"
+                            ],
+                            "modifiers" : [
+                                "subsurf"
+                            ],
+                            "materials" : [
+                                "seau",
+                                "metal",
+                                "pierre",
+                                "corde"
+                            ],
+                            "rig" : 0,
+                            "simulation" : 0,
+                            "dimensionX" : 1.0728,
+                            "dimensionY" : 0.8409,
+                            "dimensionZ" : 1.5938,
+                            "boundBoxMinX" : -0.4286,
+                            "boundBoxMinY" : -0.4168,
+                            "boundBoxMinZ" : -0.0119,
+                            "boundBoxMaxX" : 0.6442,
+                            "boundBoxMaxY" : 0.4241,
+                            "boundBoxMaxZ" : 1.5819,
+                            "faceCountRender" : 198554,
+                            "meshPolyType" : "quad_dominant",
+                            "manifold" : 0,
+                            "objectCount" : 5,
+                            "nodeCount" : 52,
+                            "textureCount" : 19,
+                            "megapixels" : 268
+                        },
+                        "canDownload" : 1,
+                        "canDownloadError" : 1,
+                        "available_resolutions" : [
+                            512,
+                            1024,
+                            2048,
+                            4096
+                        ],
+                        "max_resolution" : 4096,
+                        "tooltip_data" : {
+                            "aname" : "Water Well",
+                            "author_text" : "by Laura Mercadal",
+                            "quality" : "10"
+                        },
+                        "resolution" : "resolution_2K"
+                    }
+                },
+                "uuid" : "ae804fec-7f51-4a98-8b2d-8d190ad48c20",
+                "assets reported" : {}
+            },
+            "name" : "Scene",
+            "nodes" : [
+                0
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "extras" : {
+                "MaxHandle" : 297,
+                "scatter5" : {},
+                "hdri_prop_obj" : {},
+                "blenderkit" : {
+                    "is_generating_thumbnail" : 0,
+                    "has_thumbnail" : 1,
+                    "thumbnail_generating_state" : "",
+                    "thumbnail" : "//pool_chair_tokyo_chaise_longue.jpg",
+                    "category" : 4,
+                    "subcategory" : 11,
+                    "is_free" : 1,
+                    "name" : "Pool chair \"TOKYO CHAISE LONGUE\"",
+                    "name_changed" : 1,
+                    "name_old" : "Pool chair \"TOKYO CHAISE LONGUE\"",
+                    "description" : "Luxery wooden Pool chair \"TOKYO CHAISE LONGUE\"",
+                    "tags" : "sun, lounger, sun lounger, garden, garden lounger, pool, chair, pool chair, wood, seat",
+                    "condition" : 1,
+                    "pbr" : 1,
+                    "manufacturer" : "Cassina",
+                    "design_collection" : "TOKYO CHAISE LONGUE",
+                    "designer" : "CHARLOTTE PERRIAND",
+                    "texture_resolution_max" : 4500,
+                    "texture_resolution_min" : 1485,
+                    "uv" : 1,
+                    "texture_count" : 5,
+                    "total_megapixels" : 23,
+                    "node_count" : 16,
+                    "engine" : 0,
+                    "is_procedural" : 0,
+                    "materials" : "fabric, wood, leather, metal.001, ",
+                    "shaders" : "principled, ",
+                    "dimensions" : [
+                        0.8754086494445801,
+                        1.9964172840118408,
+                        0.9931783676147461
+                    ],
+                    "bbox_min" : [
+                        -0.43770432472229004,
+                        -0.9747019410133362,
+                        1.341104507446289e-07
+                    ],
+                    "bbox_max" : [
+                        0.43770429491996765,
+                        1.0217154026031494,
+                        0.9931784868240356
+                    ],
+                    "face_count" : 26007,
+                    "face_count_render" : 42405,
+                    "mesh_poly_type" : 1,
+                    "manifold" : 0,
+                    "modifiers" : "mirror,bevel,",
+                    "object_count" : 19,
+                    "upload_state" : "Starting upload. Please don't close Blender until upload finishes",
+                    "report" : "",
+                    "asset_base_id" : "3aab8896-3f13-43e8-bc4e-50b39c5b9263",
+                    "id" : "7e7bfa99-c6bf-4408-9406-6f08714de516",
+                    "uploading" : 0,
+                    "thumbnail_background_lightness" : 0.699999988079071
+                },
+                "hops" : {},
+                "asset_data" : {
+                    "thumbnail" : "thumbnail_671a269a-ea6a-4401-92ce-3f70bb93521c.jpg.512x512_q85_crop-%2C.jpg",
+                    "thumbnail_small" : "thumbnail_671a269a-ea6a-4401-92ce-3f70bb93521c.jpg.256x256_q85_crop-%2C.jpg",
+                    "downloaded" : 0,
+                    "bbox_min" : [
+                        -0.4377,
+                        -0.9747,
+                        0.0
+                    ],
+                    "bbox_max" : [
+                        0.4377,
+                        1.0217,
+                        0.9932
+                    ],
+                    "url" : "https://www.blenderkit.com/api/v1/assets/7e7bfa99-c6bf-4408-9406-6f08714de516/",
+                    "id" : "7e7bfa99-c6bf-4408-9406-6f08714de516",
+                    "assetBaseId" : "3aab8896-3f13-43e8-bc4e-50b39c5b9263",
+                    "versionNumber" : 1,
+                    "author" : {
+                        "id" : "280678",
+                        "firstName" : "Mesk911",
+                        "lastName" : "",
+                        "gravatarHash" : "7677940748604a9594ee789054d417b4",
+                        "avatar128" : "/avatar-redirect/fa082f64-7c44-436f-a691-3edf104434b1/128/",
+                        "aboutMe" : "\u0669(\u2299\u203f\u2299)\u06f6",
+                        "aboutMeUrl" : "https://www.behance.net/Mesk911",
+                        "tooltip" : "Mesk911 \n\n\u0669(\u2299\u203f\u2299)\u06f6\n",
+                        "gravatarImg" : "C:\\Users\\admin\\AppData\\Local\\Temp\\bkit_temp\\bkit_g/280678.jpg"
+                    },
+                    "name" : "Pool chair \"TOKYO CHAISE LONGUE\"",
+                    "displayName" : "Pool chair \"TOKYO CHAISE LONGUE\"",
+                    "description" : "Luxery wooden Pool chair \"TOKYO CHAISE LONGUE\"",
+                    "assetType" : "model",
+                    "category" : "outdoor-furniture",
+                    "adult" : 0,
+                    "isFree" : 1,
+                    "tags" : [
+                        "sun",
+                        "lounger",
+                        "sun lounger",
+                        "garden",
+                        "garden lounger",
+                        "pool",
+                        "chair",
+                        "pool chair",
+                        "wood",
+                        "seat"
+                    ],
+                    "license" : "royalty_free",
+                    "sourceAppName" : "blender",
+                    "sourceAppVersion" : "3.1.2",
+                    "addonVersion" : "3.1.3",
+                    "created" : "2022-05-12T17:46:18.276987+02:00",
+                    "verificationStatus" : "validated",
+                    "isPrivate" : 0,
+                    "files" : [
+                        {
+                            "fileType" : "blend",
+                            "downloadUrl" : "https://www.blenderkit.com/api/v1/downloads/115099/",
+                            "fileThumbnail" : null,
+                            "fileThumbnailLarge" : null
+                        },
+                        {
+                            "fileType" : "resolution_0_5K",
+                            "downloadUrl" : "https://www.blenderkit.com/api/v1/downloads/123377/",
+                            "fileThumbnail" : null,
+                            "fileThumbnailLarge" : null
+                        },
+                        {
+                            "fileType" : "resolution_1K",
+                            "downloadUrl" : "https://www.blenderkit.com/api/v1/downloads/123376/",
+                            "fileThumbnail" : null,
+                            "fileThumbnailLarge" : null
+                        },
+                        {
+                            "fileType" : "resolution_2K",
+                            "downloadUrl" : "https://www.blenderkit.com/api/v1/downloads/123375/",
+                            "fileThumbnail" : null,
+                            "fileThumbnailLarge" : null,
+                            "url" : "https://public.blenderkit.com/public-assets/assets/7e7bfa99c6bf440894066f08714de516/files/resolution_2K_be98a548-50e5-4768-bcd2-7cc12e1b7fed.blend",
+                            "file_name" : "resolution_2K_be98a548-50e5-4768-bcd2-7cc12e1b7fed.blend"
+                        },
+                        {
+                            "fileType" : "resolution_4K",
+                            "downloadUrl" : "https://www.blenderkit.com/api/v1/downloads/123374/",
+                            "fileThumbnail" : null,
+                            "fileThumbnailLarge" : null
+                        },
+                        {
+                            "fileType" : "thumbnail",
+                            "downloadUrl" : "https://www.blenderkit.com/api/v1/downloads/115098/",
+                            "fileThumbnail" : "https://public.blenderkit.com/thumbnails/assets/7e7bfa99c6bf440894066f08714de516/files/thumbnail_671a269a-ea6a-4401-92ce-3f70bb93521c.jpg.96x96_q85_crop-%2C.jpg",
+                            "fileThumbnailLarge" : "https://public.blenderkit.com/thumbnails/assets/7e7bfa99c6bf440894066f08714de516/files/thumbnail_671a269a-ea6a-4401-92ce-3f70bb93521c.jpg.1024x1024_q85_crop-%2C.jpg"
+                        }
+                    ],
+                    "filesSize" : 8876502,
+                    "thumbnailSmallUrl" : "https://public.blenderkit.com/thumbnails/assets/7e7bfa99c6bf440894066f08714de516/files/thumbnail_671a269a-ea6a-4401-92ce-3f70bb93521c.jpg.256x256_q85_crop-%2C.jpg",
+                    "thumbnailMiddleUrl" : "https://public.blenderkit.com/thumbnails/assets/7e7bfa99c6bf440894066f08714de516/files/thumbnail_671a269a-ea6a-4401-92ce-3f70bb93521c.jpg.512x512_q85_crop-%2C.jpg",
+                    "thumbnailLargeUrl" : "https://public.blenderkit.com/thumbnails/assets/7e7bfa99c6bf440894066f08714de516/files/thumbnail_671a269a-ea6a-4401-92ce-3f70bb93521c.jpg.1024x1024_q85_crop-%2C.jpg",
+                    "thumbnailXlargeUrl" : "https://public.blenderkit.com/thumbnails/assets/7e7bfa99c6bf440894066f08714de516/files/thumbnail_671a269a-ea6a-4401-92ce-3f70bb93521c.jpg.1024x1024_q85_crop-%2C.jpg",
+                    "thumbnailSmallUrlNonsquared" : "https://public.blenderkit.com/thumbnails/assets/7e7bfa99c6bf440894066f08714de516/files/thumbnail_671a269a-ea6a-4401-92ce-3f70bb93521c.jpg.256x256_q85.jpg",
+                    "thumbnailMiddleUrlNonsquared" : "https://public.blenderkit.com/thumbnails/assets/7e7bfa99c6bf440894066f08714de516/files/thumbnail_671a269a-ea6a-4401-92ce-3f70bb93521c.jpg.512x512_q85.jpg",
+                    "thumbnailLargeUrlNonsquared" : "https://public.blenderkit.com/thumbnails/assets/7e7bfa99c6bf440894066f08714de516/files/thumbnail_671a269a-ea6a-4401-92ce-3f70bb93521c.jpg.1024x1024_q85.jpg",
+                    "thumbnailXlargeUrlNonsquared" : "https://public.blenderkit.com/thumbnails/assets/7e7bfa99c6bf440894066f08714de516/files/thumbnail_671a269a-ea6a-4401-92ce-3f70bb93521c.jpg.2048x2048_q85.jpg",
+                    "showMarketingLabels" : 1,
+                    "score" : 640.0,
+                    "ratingsMedian" : {
+                        "competition-2022-votes" : null,
+                        "complexity" : null,
+                        "virtualPriceAdmin" : null,
+                        "virtualPrice" : null,
+                        "quality" : 8.0,
+                        "workingHours" : 8.0,
+                        "complexityAdmin" : null
+                    },
+                    "ratingsAverage" : {
+                        "competition-2022-votes" : null,
+                        "complexity" : null,
+                        "virtualPriceAdmin" : null,
+                        "virtualPrice" : null,
+                        "quality" : 8.0,
+                        "workingHours" : 8.0,
+                        "complexityAdmin" : null
+                    },
+                    "ratingsCount" : {
+                        "competition-2022-votes" : 0,
+                        "complexity" : 0,
+                        "virtualPriceAdmin" : 0,
+                        "virtualPrice" : 0,
+                        "quality" : 2,
+                        "workingHours" : 1,
+                        "complexityAdmin" : 0
+                    },
+                    "ratingsSum" : {
+                        "competition-2022-votes" : null,
+                        "complexity" : null,
+                        "virtualPriceAdmin" : null,
+                        "virtualPrice" : null,
+                        "quality" : 16.0,
+                        "workingHours" : 8.0,
+                        "complexityAdmin" : null
+                    },
+                    "dictParameters" : {
+                        "textureResolutionMax" : 4500,
+                        "faceCount" : 26007,
+                        "productionLevel" : "finished",
+                        "procedural" : 0,
+                        "modelStyle" : "realistic",
+                        "condition" : "new",
+                        "designer" : "CHARLOTTE PERRIAND",
+                        "manufacturer" : "Cassina",
+                        "designCollection" : "TOKYO CHAISE LONGUE",
+                        "purePbr" : 1,
+                        "shaders" : [
+                            "principled"
+                        ],
+                        "animated" : 0,
+                        "pbrType" : "metallic",
+                        "uv" : 1,
+                        "textureResolutionMin" : 1485,
+                        "engines" : [
+                            "cycles"
+                        ],
+                        "modifiers" : [
+                            "mirror",
+                            "bevel"
+                        ],
+                        "materials" : [
+                            "fabric",
+                            "wood",
+                            "leather",
+                            "metal.001"
+                        ],
+                        "rig" : 0,
+                        "simulation" : 0,
+                        "dimensionX" : 0.8754,
+                        "dimensionY" : 1.9964,
+                        "dimensionZ" : 0.9932,
+                        "boundBoxMinX" : -0.4377,
+                        "boundBoxMinY" : -0.9747,
+                        "boundBoxMinZ" : 0.0,
+                        "boundBoxMaxX" : 0.4377,
+                        "boundBoxMaxY" : 1.0217,
+                        "boundBoxMaxZ" : 0.9932,
+                        "faceCountRender" : 42405,
+                        "meshPolyType" : "quad_dominant",
+                        "manifold" : 0,
+                        "objectCount" : 19,
+                        "nodeCount" : 16,
+                        "textureCount" : 5,
+                        "megapixels" : 23
+                    },
+                    "canDownload" : 1,
+                    "canDownloadError" : 1,
+                    "available_resolutions" : [
+                        512,
+                        1024,
+                        2048,
+                        4096
+                    ],
+                    "max_resolution" : 4096,
+                    "tooltip_data" : {
+                        "aname" : "Pool chair \"TOKYO CHAISE LONGUE\"",
+                        "author_text" : "by Mesk911 ",
+                        "quality" : "8"
+                    },
+                    "resolution" : "resolution_2K"
+                }
+            },
+            "name" : "Pool chair TOKYO CHAISE LONGUE"
+        }
+    ]
+}
